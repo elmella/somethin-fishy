@@ -1,0 +1,153 @@
+{
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "residual_coordinates": "Hull-edge arc lengths / 20 and speed fractions",
+  "initialization": "Deterministic coverage assignment and adjoint optimization",
+  "execution": "State-feedback attraction reconstruction; NOT a fixed raw-u table",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 400,
+  "J": 13.072650390164478,
+  "distance_J": 13.089725576582016,
+  "harvested": 6.998954632077949,
+  "crowding": 7.436756452892691,
+  "travel": 5.5484323314843005,
+  "terminal_fish": 0.10453679220502486,
+  "distance_per_boat": [
+    171.52262900298382,
+    146.1070763942456,
+    101.14595186560159,
+    42.26052868644536,
+    93.80704719915376
+  ],
+  "initial_J": 13.074713081622395,
+  "projected_residual": 0.0009989016935736394,
+  "gradient_tolerance": 0.001,
+  "integrated_hamiltonian_gap": 0.004816096959869811,
+  "max_hamiltonian_gap": 9.188648543076712e-05,
+  "hamiltonian_tolerance": 0.005,
+  "hamiltonian_time_samples": 1200,
+  "converged": true,
+  "status": "Numerical regularized-PMP tolerances met",
+  "continuous_replay": {
+    "max_position_error": 1.2882480859843781e-08,
+    "max_fish_error": 1.2661787308736183e-14,
+    "J": 13.072650390164124,
+    "distance_J": 13.089725576578406,
+    "rtol": 1e-09
+  },
+  "feedback_replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 2.4130883957695914e-08,
+      "max_fish_error": 5.113868516474183e-13,
+      "distance_objective": 13.089725576599179
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.405080744618317e-10,
+      "max_fish_error": 5.763618748932942e-16,
+      "distance_objective": 13.089725576587874
+    }
+  ],
+  "control_checks": {
+    "minimum_center_clearance": 0.3012759265761786,
+    "max_velocity_reconstruction_error": 8.737127688007718e-11,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999952070695565
+  },
+  "travel_smoothing_uniform_cost_bound": 0.03,
+  "regularization_sensitivity": [
+    {
+      "eta": 0.1,
+      "distance_J": 13.094208068135053,
+      "harvested": 6.9989649702732315,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.25,
+      "distance_J": 13.091440955323236,
+      "harvested": 6.998963221384563,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.5,
+      "distance_J": 13.089725576582016,
+      "harvested": 6.998954632077949,
+      "reoptimized": false
+    },
+    {
+      "eta": 1.0,
+      "distance_J": 13.09369189943828,
+      "harvested": 6.998902152652439,
+      "reoptimized": false
+    }
+  ],
+  "global_optimality_claim": false,
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 600.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

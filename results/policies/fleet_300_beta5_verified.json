@@ -1,0 +1,196 @@
+{
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "residual_coordinates": "Hull-edge arc lengths / 20 and speed fractions",
+  "initialization": "Deterministic coverage assignment and adjoint optimization",
+  "execution": "State-feedback attraction reconstruction; NOT a fixed raw-u table",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 300,
+  "J": 36.27300802108915,
+  "distance_J": 36.28650569344413,
+  "harvested": 11.889356589580222,
+  "crowding": 17.79922134761542,
+  "travel": 7.4229433038508725,
+  "terminal_fish": 11.064341041977832,
+  "distance_per_boat": [
+    172.90747713159095,
+    94.74128676460008,
+    92.39975362912189,
+    46.46128341270311,
+    40.61221417086405,
+    88.67883475744246,
+    143.8883878676463,
+    62.60509265111843
+  ],
+  "initial_J": 36.286382621259406,
+  "projected_residual": 0.0009978405992150385,
+  "gradient_tolerance": 0.001,
+  "integrated_hamiltonian_gap": 0.002908506447947134,
+  "max_hamiltonian_gap": 0.0005850161507133323,
+  "hamiltonian_tolerance": 0.005,
+  "hamiltonian_time_samples": 900,
+  "converged": true,
+  "status": "Numerical regularized-PMP tolerances met",
+  "continuous_replay": {
+    "max_position_error": 1.1652900866465643e-10,
+    "max_fish_error": 2.230854390106174e-15,
+    "J": 36.273008021088785,
+    "distance_J": 36.28650569344373,
+    "rtol": 1e-09
+  },
+  "feedback_replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 1.877484123724571e-08,
+      "max_fish_error": 1.1369932773064306e-12,
+      "distance_objective": 36.28650569336783
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.425260158313904e-11,
+      "max_fish_error": 3.95516952522712e-15,
+      "distance_objective": 36.28650569344602
+    }
+  ],
+  "control_checks": {
+    "minimum_center_clearance": 2.8882366584316963e-11,
+    "max_velocity_reconstruction_error": 7.020161527293567e-11,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999952995020875
+  },
+  "travel_smoothing_uniform_cost_bound": 0.024,
+  "regularization_sensitivity": [
+    {
+      "eta": 0.1,
+      "distance_J": 36.274328808930306,
+      "harvested": 11.88953107898631,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.25,
+      "distance_J": 36.276158245602744,
+      "harvested": 11.88949860591237,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.5,
+      "distance_J": 36.28650569344413,
+      "harvested": 11.889356589580222,
+      "reoptimized": false
+    },
+    {
+      "eta": 1.0,
+      "distance_J": 36.36365565818287,
+      "harvested": 11.88845007645326,
+      "reoptimized": false
+    }
+  ],
+  "executable_control_speed_zero_tolerance": 1e-10,
+  "executable_control_velocity_reconstruction_tolerance": 1e-10,
+  "roundoff_arrival_stops": {
+    "changed_intervals": 270,
+    "displacement_threshold": 1e-10,
+    "max_position_change": 1.0874146028072573e-10,
+    "distance_objective_change": 1.028865881380625e-11
+  },
+  "global_optimality_claim": false,
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ],
+      [
+        133.3997615516365,
+        63.64368694156451
+      ],
+      [
+        53.56474710591453,
+        108.72351074409151
+      ],
+      [
+        137.3097248635457,
+        86.92809822115836
+      ],
+      [
+        181.72991372538462,
+        131.42105555942675
+      ],
+      [
+        96.75842325234136,
+        81.65997809300559
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ],
+      [
+        57.288504590707305,
+        42.7213531416806
+      ],
+      [
+        148.21935345900872,
+        152.4489761030514
+      ],
+      [
+        121.3568327299603,
+        117.69931765682206
+      ]
+    ],
+    "T": 300.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

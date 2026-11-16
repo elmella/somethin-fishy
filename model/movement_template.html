@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How the blue boat moves</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f3f7f8;color:#183443;font:17px/1.55 system-ui}main{max-width:860px;padding:24px;margin:auto}h1{line-height:1.15}section{background:white;border:1px solid #c8dce0;border-radius:12px;padding:18px}svg{width:100%;max-height:410px;display:block}input{width:100%;accent-color:#147c77}output{font-variant-numeric:tabular-nums}a{color:#145a72}button{font:inherit;padding:3px 14px}</style><main>
+<p><a href="../results/gallery.html">Fleet gallery</a></p><h1>How the blue boat moves</h1>
+<p>The blue circle is the boat. The green diamond is its steering target. Scrub through the five-boat, 400-second run (β = 5) to see how far apart they are as the boat fishes and travels.</p>
+<section><svg id="map" viewBox="-12 -12 224 224" role="img" aria-label="Blue boat, route, steering target and fishing grounds"></svg>
+<label for="time">Simulation time: <output id="clock"></output></label><input type="range" id="time" min="0" max="400" step="0.5" value="124">
+<button id="play">Play</button><p id="readout"></p></section>
+<h2>What the target controls</h2><p>If the boat is at <i>x</i> and its target is <i>z</i>, the arrow <i>z − x</i> points in its direction of travel. The target can be between fishing grounds; fish are harvested only where the boat actually goes. The target must lie inside the region spanned by the grounds.</p>
+<p>The actual speed is <strong>a V d / √(d² + η²)</strong>, where <i>a</i> is throttle, <i>V</i> is the speed limit, <i>d</i> is the distance to the target, and <i>η</i> = 0.5. When the target is far away the speed approaches <i>aV</i>. When the target is close the boat slows smoothly. Zero throttle stops the boat wherever it is.</p>
+<p>The boat fishes while stationary or moving. Darker ground circles have more fish remaining. The dashed line describes steering at the selected time, and the solid line shows where the boat has actually been.</p>
+</main><script>
+const s=__DATA__,slider=document.querySelector('#time'),map=document.querySelector('#map'),button=document.querySelector('#play');
+const xy=p=>[p[0],200-p[1]], point=p=>xy(p).join(',');
+function draw(){let k=Math.round(Number(slider.value)*2),x=s.x[k],z=s.z[k],[cx,cy]=xy(x),[tx,ty]=xy(z),d=Math.hypot(z[0]-x[0],z[1]-x[1]),a=s.a[k];
+ map.innerHTML=s.grounds.map((g,j)=>{const [gx,gy]=xy(g);return `<circle cx="${gx}" cy="${gy}" r="3" fill="hsl(208,42%,${96-65*s.fish[k][j]}%)" stroke="#59778a" stroke-width=".5"/><text x="${gx+4}" y="${gy-2}" font-size="5">G${j+1}</text>`}).join('')+
+ `<polyline points="${s.x.slice(0,k+1).map(point).join(' ')}" fill="none" stroke="#2779b5" stroke-width="1.1"/><line x1="${cx}" y1="${cy}" x2="${tx}" y2="${ty}" stroke="#147c77" stroke-dasharray="2 2"/><path d="M ${tx} ${ty-3} l 3 3 -3 3 -3 -3 z" fill="white" stroke="#147c77"/><circle cx="${cx}" cy="${cy}" r="2" fill="#2779b5"/>`;
+ document.querySelector('#clock').value=slider.value+' / 400 s';document.querySelector('#readout').textContent=`Throttle: ${a.toFixed(3)} · Distance to target: ${d.toFixed(2)} · Speed: ${(a*s.V*d/Math.hypot(d,s.eta)).toFixed(3)}`;}
+let timer;function stop(){clearInterval(timer);timer=null;button.textContent='Play'}slider.oninput=()=>{stop();draw()};button.onclick=()=>{if(timer){stop();return}if(+slider.value>=400)slider.value=0;button.textContent='Pause';timer=setInterval(()=>{slider.value=Math.min(400,+slider.value+.5);draw();if(+slider.value>=400)stop()},40)};draw();
+</script></html>
