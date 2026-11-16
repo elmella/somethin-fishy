@@ -1,0 +1,220 @@
+[
+  {
+    "scenario": "baseline_300",
+    "seconds": 300.0,
+    "boats": 5,
+    "grounds": 7,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 2.9999891954412607,
+        "distance": 235.34333244651998,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 6.9081788948349825,
+        "distance": 545.7773077598642,
+        "gain": 3.9081896993937217,
+        "projected_residual": 0.0009312715562548313,
+        "integrated_hamiltonian_gap": 0.004333581330361863,
+        "converged": true,
+        "steps": 150
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 0",
+        "harvested": 6.9090691691712305,
+        "distance": 541.8544848646229,
+        "gain": 3.9090799737299697,
+        "projected_residual": 5.454100802938891e-06,
+        "integrated_hamiltonian_gap": 0.00378041677499341,
+        "converged": true,
+        "steps": 150
+      }
+    ]
+  },
+  {
+    "scenario": "grounds_300",
+    "seconds": 300.0,
+    "boats": 5,
+    "grounds": 10,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 3.99994337476413,
+        "distance": 159.92724052826514,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 9.824816319369807,
+        "distance": 710.1042799882537,
+        "gain": 5.824872944605677,
+        "projected_residual": 0.0007750056302979758,
+        "integrated_hamiltonian_gap": 0.0034797486655290264,
+        "converged": true,
+        "steps": 300
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 0",
+        "harvested": 9.83001180017469,
+        "distance": 708.2468642412514,
+        "gain": 5.83006842541056,
+        "projected_residual": 9.908551707938328e-06,
+        "integrated_hamiltonian_gap": 0.0018667817518025758,
+        "converged": true,
+        "steps": 300
+      }
+    ]
+  },
+  {
+    "scenario": "fleet_300",
+    "seconds": 300.0,
+    "boats": 8,
+    "grounds": 12,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 4.999997463168614,
+        "distance": 199.26349605248848,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 11.889356589580222,
+        "distance": 742.2943303850876,
+        "gain": 6.889359126411608,
+        "projected_residual": 0.0009978405992150385,
+        "integrated_hamiltonian_gap": 0.002908506447947134,
+        "converged": true,
+        "steps": 300
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 0",
+        "harvested": 11.901204165907128,
+        "distance": 685.3992115963032,
+        "gain": 6.901206702738514,
+        "projected_residual": 0.0009920670957512718,
+        "integrated_hamiltonian_gap": 0.0031726958273026067,
+        "converged": true,
+        "steps": 300
+      }
+    ]
+  },
+  {
+    "scenario": "harbor_300",
+    "seconds": 300.0,
+    "boats": 5,
+    "grounds": 7,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 1.999999999972001,
+        "distance": 309.5696310785766,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 6.439823785671064,
+        "distance": 759.5921831273089,
+        "gain": 4.439823785699063,
+        "projected_residual": 0.0009878062468121618,
+        "integrated_hamiltonian_gap": 0.002844182592429473,
+        "converged": true,
+        "steps": 600
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 0",
+        "harvested": 6.44266699323947,
+        "distance": 750.2640762497967,
+        "gain": 4.442666993267469,
+        "projected_residual": 0.00023783213944738956,
+        "integrated_hamiltonian_gap": 0.0011037434509230063,
+        "converged": true,
+        "steps": 300
+      }
+    ]
+  },
+  {
+    "scenario": "dispersed_400",
+    "seconds": 400,
+    "boats": 5,
+    "grounds": 7,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 2.999999927199455,
+        "distance": 235.34333244651998,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 6.991279966017851,
+        "distance": 564.719991019846,
+        "gain": 3.991280038818396,
+        "projected_residual": 0.00031241811234838934,
+        "integrated_hamiltonian_gap": 0.0012438705550679848,
+        "converged": true,
+        "steps": 200
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 0",
+        "harvested": 6.99241166138151,
+        "distance": 537.4267498270507,
+        "gain": 3.9924117341820553,
+        "projected_residual": 0.0007353832996729016,
+        "integrated_hamiltonian_gap": 0.0017089725835400147,
+        "converged": true,
+        "steps": 200
+      }
+    ]
+  },
+  {
+    "scenario": "dispersed_600",
+    "seconds": 600,
+    "boats": 5,
+    "grounds": 7,
+    "runs": [
+      {
+        "label": "Without optimal control",
+        "harvested": 2.999999999996695,
+        "distance": 235.34333244651998,
+        "gain": 0.0,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "converged": null,
+        "steps": null
+      },
+      {
+        "label": "Optimal control \u00b7 \u03b2 = 5",
+        "harvested": 6.998954632077949,
+        "distance": 554.8432331484303,
+        "gain": 3.9989546320812543,
+        "projected_residual": 0.0009989016935736394,
+        "integrated_hamiltonian_gap": 0.004816096959869811,
+        "converged": true,
+        "steps": 400
+      }
+    ]
+  }
+]

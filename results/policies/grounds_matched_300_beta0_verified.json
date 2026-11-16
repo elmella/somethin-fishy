@@ -1,0 +1,165 @@
+{
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "residual_coordinates": "Hull-edge arc lengths / 20 and speed fractions",
+  "initialization": "Deterministic coverage assignment and adjoint optimization",
+  "execution": "State-feedback attraction reconstruction; NOT a fixed raw-u table",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 300,
+  "J": 24.07086898831389,
+  "distance_J": 24.081288624943724,
+  "harvested": 9.830011800174688,
+  "crowding": 0.0,
+  "travel": 7.082468642412513,
+  "terminal_fish": 16.99881998253121,
+  "distance_per_boat": [
+    150.82394195331702,
+    107.19179535200233,
+    186.67310893733963,
+    126.25137401452065,
+    137.3066439840716
+  ],
+  "initial_J": 24.07098635299996,
+  "projected_residual": 9.908551707938328e-06,
+  "gradient_tolerance": 0.001,
+  "integrated_hamiltonian_gap": 0.0018667817518025758,
+  "max_hamiltonian_gap": 0.0009368529124231498,
+  "hamiltonian_tolerance": 0.005,
+  "hamiltonian_time_samples": 900,
+  "converged": true,
+  "status": "Numerical regularized-PMP tolerances met",
+  "continuous_replay": {
+    "max_position_error": 1.1451106729509775e-10,
+    "max_fish_error": 5.4903998014665945e-15,
+    "J": 24.070868988313787,
+    "distance_J": 24.081288624943767,
+    "rtol": 1e-09
+  },
+  "feedback_replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 2.4817964572321216e-08,
+      "max_fish_error": 1.2630625711995691e-12,
+      "distance_objective": 24.081288624989895
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.3968384488835e-11,
+      "max_fish_error": 2.411265631607762e-15,
+      "distance_objective": 24.08128862494375
+    }
+  ],
+  "control_checks": {
+    "minimum_center_clearance": 0.0025831468118604865,
+    "max_velocity_reconstruction_error": 2.681264498621827e-14,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999952565496446
+  },
+  "travel_smoothing_uniform_cost_bound": 0.015,
+  "regularization_sensitivity": [
+    {
+      "eta": 0.1,
+      "distance_J": 24.06403843130366,
+      "harvested": 9.830206897891618,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.25,
+      "distance_J": 24.066995824324376,
+      "harvested": 9.830167724449751,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.5,
+      "distance_J": 24.081288624943724,
+      "harvested": 9.830011800174688,
+      "reoptimized": false
+    },
+    {
+      "eta": 1.0,
+      "distance_J": 24.167496662374305,
+      "harvested": 9.829083462278671,
+      "reoptimized": false
+    }
+  ],
+  "global_optimality_claim": false,
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ],
+      [
+        133.3997615516365,
+        63.64368694156451
+      ],
+      [
+        53.56474710591453,
+        108.72351074409151
+      ],
+      [
+        137.3097248635457,
+        86.92809822115836
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 300.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 0.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}
