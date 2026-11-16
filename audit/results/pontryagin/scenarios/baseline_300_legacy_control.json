@@ -1,0 +1,9 @@
+{
+  "source_commit": "23043fe5525d3b27dc0401f733fc8a9ec169ca26",
+  "source": "random/updated_sam_fishin.ipynb, active cell 23",
+  "control_updates": 1,
+  "max_control_change": 0.007228691508796237,
+  "optimizer_failures": 0,
+  "harvested": 3.803146348576536,
+  "note": "Original surrogate, terminal sign, bounds and inactive speed assignment retained. Post-update state replayed instead of stale pre-update plot. Scenario geometry and T adapted; coefficients held equal across comparisons."
+}

@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "policy": "coverage_400_verified",
+      "beta": 5.0,
+      "harvest": 6.991279966017835,
+      "total_distance": 564.7199910198444,
+      "crowding": 5.534223739946453,
+      "remaining_fish_cost": 0.8720033982164616,
+      "projected_residual": 0.00031241811234838934,
+      "integrated_hamiltonian_gap": 0.0012438705550679848
+    },
+    {
+      "policy": "coverage_400_beta0_verified",
+      "beta": 0.0,
+      "harvest": 6.9924116613814915,
+      "total_distance": 537.4267498270486,
+      "crowding": 0.0,
+      "remaining_fish_cost": 0.758833861850839,
+      "projected_residual": 0.0007353832996729016,
+      "integrated_hamiltonian_gap": 0.0017089725835400147
+    }
+  ],
+  "frames": 161,
+  "horizon": 400.0,
+  "only_problem_parameter_changed": "beta"
+}

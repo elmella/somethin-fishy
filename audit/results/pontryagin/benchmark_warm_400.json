@@ -1,0 +1,356 @@
+{
+  "method": "Forward/backward adjoints with joint Hamiltonian updates; regularized effective targets",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 200,
+  "initial_J": 9.617618137508284,
+  "initial_original_J": 9.629411245100872,
+  "initial_catch": 6.997247767939143,
+  "J": 9.59812778000917,
+  "original_J": 9.609587056606873,
+  "harvested": 6.997274836247099,
+  "converged": false,
+  "status": "Iteration limit; residual tolerances not met",
+  "gradient_tolerance": 0.001,
+  "hamiltonian_tolerance": 0.005,
+  "projected_residual": 0.0016134323682459595,
+  "integrated_hamiltonian_gap": 0.005076761490278994,
+  "max_hamiltonian_gap": 0.0020255042994920124,
+  "replay": {
+    "max_position_error": 4.922441121379961e-09,
+    "max_fish_error": 2.9433053216898486e-14,
+    "J": 9.59812778000558,
+    "original_J": 9.609587056603866,
+    "rtol": 1e-08
+  },
+  "history": [
+    {
+      "cycle": 0,
+      "initial_J": 9.617618137508284,
+      "J": 9.607982285820473,
+      "original_J": 9.619642097445311,
+      "projected_residual": 0.009600620347890665,
+      "history": [
+        {
+          "penalty": 1.0,
+          "J": 9.61615088574804,
+          "original_J": 9.627162014867578,
+          "projected_residual": 0.13440704250142368,
+          "max_constraint_violation": 0.06861245652865211,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10.0,
+          "J": 9.613170410086472,
+          "original_J": 9.624908376724814,
+          "projected_residual": 0.06012814069844144,
+          "max_constraint_violation": 0.0014107334771455982,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 100.0,
+          "J": 9.61096777679929,
+          "original_J": 9.622530980546601,
+          "projected_residual": 0.026609104988067678,
+          "max_constraint_violation": 7.078238833813089e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 1000.0,
+          "J": 9.609263415075503,
+          "original_J": 9.620911316069265,
+          "projected_residual": 0.022960318248616884,
+          "max_constraint_violation": 3.080326403193112e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.608499126366734,
+          "original_J": 9.620140023125334,
+          "projected_residual": 0.004800599794359872,
+          "max_constraint_violation": 1.4718200673780046e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.607982285820473,
+          "original_J": 9.619642097445311,
+          "projected_residual": 0.009600620347890665,
+          "max_constraint_violation": 3.485992305485297e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        }
+      ],
+      "integrated_hamiltonian_gap": 0.009448872321820961,
+      "max_hamiltonian_gap": 0.0019887651165937013
+    },
+    {
+      "cycle": 1,
+      "initial_J": 9.607982285820473,
+      "J": 9.603443964951612,
+      "original_J": 9.615076762977196,
+      "projected_residual": 0.01585883592899262,
+      "history": [
+        {
+          "penalty": 1.0,
+          "J": 9.608324319270931,
+          "original_J": 9.619225630537601,
+          "projected_residual": 0.11732287854766249,
+          "max_constraint_violation": 0.07259651295180314,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10.0,
+          "J": 9.60652721847747,
+          "original_J": 9.6182857425575,
+          "projected_residual": 0.05904633094256623,
+          "max_constraint_violation": 0.0013717825694801178,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 100.0,
+          "J": 9.605265508605072,
+          "original_J": 9.61684869990118,
+          "projected_residual": 0.022401034787079332,
+          "max_constraint_violation": 0.00013158053307904538,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 1000.0,
+          "J": 9.60406180921287,
+          "original_J": 9.615778987295524,
+          "projected_residual": 0.008754788325120888,
+          "max_constraint_violation": 3.921094402059566e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.603758254815226,
+          "original_J": 9.615470751945821,
+          "projected_residual": 0.005376133191589361,
+          "max_constraint_violation": 3.3869125992680438e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.603443964951612,
+          "original_J": 9.615076762977196,
+          "projected_residual": 0.01585883592899262,
+          "max_constraint_violation": 4.3035365706600714e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        }
+      ],
+      "integrated_hamiltonian_gap": 0.007449024610972483,
+      "max_hamiltonian_gap": 0.0020050157715537312
+    },
+    {
+      "cycle": 2,
+      "initial_J": 9.602995310963859,
+      "J": 9.60009656874399,
+      "original_J": 9.611704830819505,
+      "projected_residual": 0.005905740929487147,
+      "history": [
+        {
+          "penalty": 1.0,
+          "J": 9.602760912056068,
+          "original_J": 9.613609771992664,
+          "projected_residual": 0.10995421136153141,
+          "max_constraint_violation": 0.07260854943278217,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10.0,
+          "J": 9.60169105034855,
+          "original_J": 9.613247613594671,
+          "projected_residual": 0.04575631090888521,
+          "max_constraint_violation": 0.0017017377202730444,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 100.0,
+          "J": 9.600735312335651,
+          "original_J": 9.61233281941395,
+          "projected_residual": 0.019072100179111207,
+          "max_constraint_violation": 6.0091422527719374e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 1000.0,
+          "J": 9.60038961144588,
+          "original_J": 9.611919288016045,
+          "projected_residual": 0.011912917514554255,
+          "max_constraint_violation": 2.0214510421112664e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.600250049293361,
+          "original_J": 9.61176279020128,
+          "projected_residual": 0.006200758230239911,
+          "max_constraint_violation": 3.331477095747104e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.60009656874399,
+          "original_J": 9.611704830819505,
+          "projected_residual": 0.005905740929487147,
+          "max_constraint_violation": 2.648743117728003e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        }
+      ],
+      "integrated_hamiltonian_gap": 0.00602802820779735,
+      "max_hamiltonian_gap": 0.00201524315415133
+    },
+    {
+      "cycle": 3,
+      "initial_J": 9.59980472873684,
+      "J": 9.598843823406767,
+      "original_J": 9.61037831304261,
+      "projected_residual": 0.004291088317708441,
+      "history": [
+        {
+          "penalty": 1.0,
+          "J": 9.600567347951513,
+          "original_J": 9.61126851903163,
+          "projected_residual": 0.13304773127846298,
+          "max_constraint_violation": 0.0720749728261918,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10.0,
+          "J": 9.599417608686464,
+          "original_J": 9.611023631899446,
+          "projected_residual": 0.03646044145957106,
+          "max_constraint_violation": 0.0016403464004923762,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 100.0,
+          "J": 9.599158847515582,
+          "original_J": 9.610625159229988,
+          "projected_residual": 0.006102400020001397,
+          "max_constraint_violation": 6.695476139739753e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 1000.0,
+          "J": 9.59899565982861,
+          "original_J": 9.610578882041958,
+          "projected_residual": 0.006815915004574347,
+          "max_constraint_violation": 5.188488755969445e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.598909766292136,
+          "original_J": 9.610432305380224,
+          "projected_residual": 0.0013235886767652971,
+          "max_constraint_violation": 1.0928379410302114e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.598843823406767,
+          "original_J": 9.61037831304261,
+          "projected_residual": 0.004291088317708441,
+          "max_constraint_violation": 9.936004887745042e-07,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        }
+      ],
+      "integrated_hamiltonian_gap": 0.0056946375627700135,
+      "max_hamiltonian_gap": 0.0020217150628002124
+    },
+    {
+      "cycle": 4,
+      "initial_J": 9.598738976659181,
+      "J": 9.59812778000917,
+      "original_J": 9.609587056606873,
+      "projected_residual": 0.0016134323682459595,
+      "history": [
+        {
+          "penalty": 1.0,
+          "J": 9.599327373781254,
+          "original_J": 9.6100025491946,
+          "projected_residual": 0.12152060825773242,
+          "max_constraint_violation": 0.07156604626892782,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10.0,
+          "J": 9.59858353284987,
+          "original_J": 9.610118954704399,
+          "projected_residual": 0.048089792545618515,
+          "max_constraint_violation": 0.0016621960898497434,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 100.0,
+          "J": 9.598392533964564,
+          "original_J": 9.60989899995162,
+          "projected_residual": 0.009071311940674676,
+          "max_constraint_violation": 7.694556634874061e-05,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 1000.0,
+          "J": 9.598239045432395,
+          "original_J": 9.60964631108687,
+          "projected_residual": 0.005065834049040152,
+          "max_constraint_violation": 3.9774484665855425e-06,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.598164983029163,
+          "original_J": 9.609641368687331,
+          "projected_residual": 0.0011860747582073117,
+          "max_constraint_violation": 3.2281568351777423e-07,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        },
+        {
+          "penalty": 10000.0,
+          "J": 9.59812778000917,
+          "original_J": 9.609587056606873,
+          "projected_residual": 0.0016134323682459595,
+          "max_constraint_violation": 4.1955456153708326e-07,
+          "inner_status": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+          "iterations": 1000
+        }
+      ],
+      "integrated_hamiltonian_gap": 0.005076761490278994,
+      "max_hamiltonian_gap": 0.0020255042994920124
+    }
+  ],
+  "global_optimality_claim": false,
+  "original_unregularized_PMP_convergence_claim": false,
+  "initialization": "audit/results/pmp/regularized_eta05_200.npz"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "rtol": 1e-08,
+    "max_step": 0.5,
+    "max_position_error": 1.830080265108336e-08,
+    "max_fish_error": 1.4439025062401578e-13,
+    "original_objective": 9.605797598973343
+  },
+  {
+    "rtol": 1e-10,
+    "max_step": 0.25,
+    "max_position_error": 4.305888978706207e-11,
+    "max_fish_error": 5.304350708668082e-15,
+    "original_objective": 9.605797599025134
+  }
+]

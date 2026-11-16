@@ -1,0 +1,178 @@
+{
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "residual_coordinates": "Hull-edge arc lengths / 20 and speed fractions",
+  "initialization": "Coverage initialization followed by adjoint refinement",
+  "execution": "State-feedback attraction reconstruction; NOT a fixed raw-u table",
+  "source": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/grounds_300_beta5.npz",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 150,
+  "J": 120.77571840216024,
+  "original_J": 120.7839045531543,
+  "harvested": 8.92078665847217,
+  "crowding": 7.53091712276483,
+  "travel": 5.331653277606554,
+  "terminal_fish": 107.92133415278293,
+  "distance_per_boat": [
+    150.9345865973275,
+    92.36725055804297,
+    105.18584003534444,
+    46.46128089881901,
+    138.21636967112138
+  ],
+  "initial_J": 120.77572268722565,
+  "history": [
+    {
+      "cycle": 0,
+      "J": 120.77571840216021,
+      "projected_residual": 0.00018706992615712527,
+      "integrated_hamiltonian_gap": 0.0032868954258116635,
+      "max_hamiltonian_gap": 0.0006121976027659931
+    }
+  ],
+  "history_scope": "Saved accepted optimization cycles/iterates",
+  "projected_residual": 0.00018706992615709155,
+  "gradient_tolerance": 0.001,
+  "integrated_hamiltonian_gap": 0.010853981900925453,
+  "max_hamiltonian_gap": 0.0024748897369731605,
+  "hamiltonian_tolerance": 0.005,
+  "hamiltonian_time_samples": 450,
+  "converged": false,
+  "status": "Residual tolerances not met",
+  "optimizer_termination": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+  "continuous_replay": {
+    "max_position_error": 1.8094112874678103e-08,
+    "max_fish_error": 3.0055472000078964e-13,
+    "J": 120.77571840223959,
+    "original_J": 120.78390455315484,
+    "rtol": 1e-09
+  },
+  "original_equation_feedback_replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 4.57428228628487e-09,
+      "max_fish_error": 5.439294847864318e-13,
+      "original_objective": 120.78390455308946
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 2.7466029450806673e-11,
+      "max_fish_error": 1.0355952206886343e-13,
+      "original_objective": 120.7839045531439
+    }
+  ],
+  "original_control_checks": {
+    "minimum_center_clearance": 4.120358284770873e-07,
+    "max_velocity_reconstruction_error": 4.6351811278100286e-15,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999952207834788
+  },
+  "travel_smoothing_uniform_cost_bound": 0.015,
+  "regularization_sensitivity": [
+    {
+      "eta": 0.1,
+      "original_J": 120.77740876024114,
+      "harvested": 8.920859325935439,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.25,
+      "original_J": 120.77825380284435,
+      "harvested": 8.920842460542426,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.5,
+      "original_J": 120.7839045531543,
+      "harvested": 8.92078665847217,
+      "reoptimized": false
+    },
+    {
+      "eta": 1.0,
+      "original_J": 120.81063338958867,
+      "harvested": 8.92054224249082,
+      "reoptimized": false
+    }
+  ],
+  "global_optimality_claim": false,
+  "original_unregularized_PMP_convergence_claim": false,
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ],
+      [
+        133.3997615516365,
+        63.64368694156451
+      ],
+      [
+        53.56474710591453,
+        108.72351074409151
+      ],
+      [
+        137.3097248635457,
+        86.92809822115836
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 300.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

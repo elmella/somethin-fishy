@@ -1,0 +1,9 @@
+Adjoint polish {'penalty': 1.0, 'J': 126.79561261570531, 'original_J': 126.80505424323188, 'projected_residual': 0.05447531648867754, 'max_constraint_violation': 0.01902054847683976, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 126.79417343050277, 'original_J': 126.80366937973771, 'projected_residual': 0.075780356742978, 'max_constraint_violation': 0.002704795837652707, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 126.79381536767825, 'original_J': 126.80330073021486, 'projected_residual': 0.014808469160161541, 'max_constraint_violation': 0.000318693172279616, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 126.7937097089107, 'original_J': 126.80321459803329, 'projected_residual': 0.0021946778844335046, 'max_constraint_violation': 1.5309091291548782e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 126.79369619310634, 'original_J': 126.80320139040728, 'projected_residual': 0.0008370093086147445, 'max_constraint_violation': 4.245317657414205e-07, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 126.7937625359605
+Edge adjoint sweep 100 126.79375894049409
+Edge adjoint sweep 200 126.79322016692863
+Edge adjoint sweep 300 126.79307157303278

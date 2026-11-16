@@ -1,0 +1,100 @@
+{
+  "initial_J": 13.098314662474971,
+  "J": 13.09831466247548,
+  "original_J": 13.114928996687997,
+  "history": [
+    {
+      "cycle": 0,
+      "J": 13.098314662471815,
+      "projected_residual": 0.015293901145069455,
+      "integrated_hamiltonian_gap": 0.02452628805503088,
+      "max_hamiltonian_gap": 0.0008323306718215902
+    },
+    {
+      "cycle": 1,
+      "J": 13.098314662474,
+      "projected_residual": 0.015293900990242193,
+      "integrated_hamiltonian_gap": 0.024526287969718244,
+      "max_hamiltonian_gap": 0.0008323306688943891
+    },
+    {
+      "cycle": 2,
+      "J": 13.09831466247548,
+      "projected_residual": 0.015293900120422421,
+      "integrated_hamiltonian_gap": 0.024526287953610195,
+      "max_hamiltonian_gap": 0.0008323306683373824
+    }
+  ],
+  "converged": false,
+  "status": "Residual tolerances not met",
+  "optimizer_termination": "Linear search failed",
+  "projected_residual": 0.015293900120422421,
+  "integrated_hamiltonian_gap": 0.024526287953610195,
+  "max_hamiltonian_gap": 0.0008323306683373824,
+  "initialization": "audit/results/pontryagin/coverage_600_refined.npz",
+  "method": "Forward/backward adjoints, joint Hamiltonian updates, bounded Newton polishing",
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 600.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

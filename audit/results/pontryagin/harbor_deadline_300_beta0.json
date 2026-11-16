@@ -1,0 +1,86 @@
+{
+  "initial_J": 63.247101556608584,
+  "J": 63.225387872923115,
+  "original_J": 63.23594143854996,
+  "history": [
+    {
+      "cycle": 0,
+      "J": 63.225387872923115,
+      "projected_residual": 0.00023783213946198156,
+      "integrated_hamiltonian_gap": 0.00020416346336153452,
+      "max_hamiltonian_gap": 7.643005850411038e-05
+    }
+  ],
+  "converged": true,
+  "status": "Numerical tolerances met",
+  "optimizer_termination": "Max. number of function evaluations reached",
+  "projected_residual": 0.00023783213946198156,
+  "integrated_hamiltonian_gap": 0.00020416346336153452,
+  "max_hamiltonian_gap": 7.643005850411038e-05,
+  "initialization": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/harbor_deadline_300_beta0.npz",
+  "method": "Forward/backward adjoints, joint Hamiltonian updates, bounded Newton polishing",
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ]
+    ],
+    "ships": [
+      [
+        80.0,
+        10.0
+      ],
+      [
+        90.0,
+        10.0
+      ],
+      [
+        100.0,
+        10.0
+      ],
+      [
+        110.0,
+        10.0
+      ],
+      [
+        120.0,
+        10.0
+      ]
+    ],
+    "T": 300.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 0.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

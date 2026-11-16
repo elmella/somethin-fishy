@@ -1,0 +1,86 @@
+{
+  "initial_J": 13.074713081622395,
+  "J": 13.072650390164474,
+  "original_J": 13.089725576582016,
+  "history": [
+    {
+      "cycle": 0,
+      "J": 13.072650390164474,
+      "projected_residual": 0.00099890169400485,
+      "integrated_hamiltonian_gap": 0.004758651833133832,
+      "max_hamiltonian_gap": 6.396159712995043e-05
+    }
+  ],
+  "converged": true,
+  "status": "Numerical tolerances met",
+  "optimizer_termination": "STOP: TOTAL NO. of ITERATIONS REACHED LIMIT",
+  "projected_residual": 0.00099890169400485,
+  "integrated_hamiltonian_gap": 0.004758651833133832,
+  "max_hamiltonian_gap": 6.396159712995043e-05,
+  "initialization": "audit/results/pontryagin/coverage_600_coordinate.npz",
+  "method": "Forward/backward adjoints, joint Hamiltonian updates, bounded Newton polishing",
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 600.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

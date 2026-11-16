@@ -1,0 +1,15 @@
+{
+  "notebook": "igofishing.ipynb",
+  "J_history": [
+    85606.40980392198,
+    523.7294535606943
+  ],
+  "harvested": 2.9999999999963682,
+  "stop_reason": "Numerical adjoint failure: Required step size is less than spacing between numbers.. No convergence claim.",
+  "costate_failed": true,
+  "speed_min": 0.0,
+  "speed_max": 1.0,
+  "forward_rtol": 1e-06,
+  "forward_atol": 1e-08,
+  "note": "Continuous-model optimality and mesh convergence are not established."
+}

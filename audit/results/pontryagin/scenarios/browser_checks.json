@@ -1,0 +1,19 @@
+{
+  "file": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/scenario_gallery.html",
+  "scenarios": [
+    "5 boats · 7 grounds · original dispersed starts · 300 seconds",
+    "5 boats · 10 grounds · original dispersed starts · 300 seconds",
+    "8 boats · 12 grounds · dispersed starts · 300 seconds",
+    "5 boats · 7 grounds · starts spaced along y = 10 · 300 seconds"
+  ],
+  "layouts": [
+    1450,
+    900,
+    390,
+    320
+  ],
+  "offline": true,
+  "playback": "passed",
+  "scrubbing": "passed",
+  "pageErrors": []
+}

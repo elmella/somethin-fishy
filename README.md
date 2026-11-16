@@ -1,4 +1,48 @@
 ## Somethin' Fishy - Fishing and Optimal Control
+
+**Pontryagin repair (October 2026):** The forward–backward solver now uses forward states, backward costates, and joint Hamiltonian control updates. The route/timing solver is retained as a benchmark.
+
+On the original 400-unit notebook map, the best verified PMP policy harvests **6.9973 / 7** and reduces the benchmark's original cost from **12.1542 to 9.6056** (about **21%**). A separate run from an unoptimized coverage guess also passes the regularized numerical convergence checks; it uses no route-optimizer solution.
+
+**The mathematical changes are explicit:** effective-target feedback coordinates, a 0.5-unit target regularization, and a 0.001-speed travel-cost smoothing. The latter changes the cost by at most 0.02 over this horizon; comparisons report the original cost. Original depletion and physical movement equations, weights, and control bounds are preserved in the tested feedback replay. **Recompute attractions from the current state; a frozen raw-attraction table remains numerically fragile.** Convergence is claimed only for the regularized PMP formulation, not the unmodified raw-open-loop problem or a global optimum.
+
+[Audit, derivation, numerical checks, and limitations](audit/REPORT.md) ·
+[Side-by-side animation](audit/results/pontryagin/comparison.gif) ·
+[Outcome plots](audit/results/pontryagin/outcomes.png) ·
+[Best verified result](audit/results/pontryagin/best_400.json) ·
+[Coverage-initialized result](audit/results/pontryagin/coverage_400_verified.json) ·
+[600-unit result](audit/results/pontryagin/coverage_600_verified.json)
+
+**Watch the 300-second comparison:** [animated GIF on the original map](audit/results/pontryagin/scenarios/baseline_300.gif). To play, pause, or scrub all four policies together, open the [scenario gallery](audit/scenario_gallery.html) locally after cloning. Each row below uses identical starting conditions across all four policies; values are fish harvested by the deadline.
+
+| Starting conditions (animation) | No optimal control | Original broken optimal control | Repaired, crowding on (β = 5) | Repaired, crowding off (β = 0) |
+| --- | ---: | ---: | ---: | ---: |
+| [5 boats, 7 grounds, dispersed](audit/results/pontryagin/scenarios/baseline_300.gif) | 3.779 | 3.803 | 6.908 | 6.909 |
+| [5 boats, 10 grounds, dispersed](audit/results/pontryagin/scenarios/grounds_300.gif) | 4.817 | 5.355 | 9.825 | 9.830 |
+| [8 boats, 12 grounds, dispersed](audit/results/pontryagin/scenarios/fleet_300.gif) | 7.952 | 7.914 | 11.889 | 11.901 |
+| [5 boats, 7 grounds, spaced along a harbor line](audit/results/pontryagin/scenarios/harbor_300.gif) | 2.000 | 2.000 | 6.440 | 6.443 |
+
+“No optimal control” holds attractions and commanded speeds at one. “Original broken optimal control” runs the historical notebook’s single control update and then simulates the updated controls; the notebook itself plotted the trajectory from before that update. The repaired columns optimize the same regularized system, changing only the crowding weight in the objective. See the [unrounded results and numerical checks](audit/results/pontryagin/scenarios/summary.json).
+
+**What changed in the math?** The [before-and-after equations](audit/equation_comparison/main.tex) distinguish corrections to the original costates and speed rule from later modeling choices. The final solver chooses a steering target and throttle for each boat and reconstructs bounded attractions during replay. The [interactive movement explanation](audit/movement_explained.html) shows why the target gives the original instantaneous direction and how the new movement law slows the boat near it. Open the HTML locally to use the controls.
+
+The 600-unit coverage-initialized run also passes the declared checks: original cost **13.0897** versus benchmark **13.5155**, with **6.9990 / 7** harvested. Its residuals are closer to the acceptance thresholds; the report gives the exact values. All **46 regression tests** and both notebooks' saved-result playback runs pass.
+
+Run with `audit/requirements.txt` installed:
+
+```sh
+python audit/run_notebook.py
+python audit/pontryagin_controller.py --seed coverage --name coverage_400
+python audit/working_controller.py --scenario all  # retained benchmark
+python audit/scenario_experiments.py  # 300-second cases; numerical solves can be slow
+python audit/scenario_gallery.py      # four-policy animations and offline viewer
+python -m unittest discover -s audit -v
+```
+
+The notebooks distinguish saved validated playback from recomputation. The reported PMP runs use the notebooks' original dispersed starts. The paper's shared-harbor route benchmark remains available; PMP optimization of that scenario is not yet validated. Final positions remain free, as in the supplied endpoint conditions.
+
+The historical project write-up below is preserved. Its original optimality claims should not be read as validated conclusions.
+
     Sam Layton
     Xander de la Bruere
     Jakob Gertsch

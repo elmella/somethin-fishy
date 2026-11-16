@@ -1,0 +1,50 @@
+{
+  "notebook": "updated_sam_fishin.ipynb",
+  "J_history": [
+    209.65964458401024,
+    112.98389047562986,
+    13.430136321713356,
+    13.390481042015365,
+    13.136132940789656,
+    12.154186721794403
+  ],
+  "harvested": 6.9971568019194965,
+  "stop_reason": "No improving tested route/dwell change",
+  "method": "Direct one/two-ground route and first-dwell optimization",
+  "speed_min": 0.0,
+  "speed_max": 1.0,
+  "verification": {
+    "replays": [
+      {
+        "rtol": 1e-07,
+        "max_step": 2.0,
+        "objective": 12.154186721868388,
+        "harvested": 6.9971568019187576,
+        "max_fish_error": 2.8958844870696776e-13,
+        "max_position_error": 1.9895196601282805e-13
+      },
+      {
+        "rtol": 1e-09,
+        "max_step": 0.5,
+        "objective": 12.154186721794272,
+        "harvested": 6.9971568019194965,
+        "max_fish_error": 2.1423834928313568e-16,
+        "max_position_error": 1.0516032489249483e-12
+      }
+    ],
+    "quadrature": {
+      "remaining": [
+        0.0003091567853727728,
+        0.0006368070070109443,
+        4.415276373847185e-06,
+        0.0006140799029438444,
+        0.0008277791602057322,
+        0.00045093845066397913,
+        2.1497931909039292e-08
+      ],
+      "crowding": 5.093864830999487
+    },
+    "minimum_center_clearance": 0.13419018730207724
+  },
+  "note": "Restricted feasible-control search; no global optimum or PMP convergence claim."
+}

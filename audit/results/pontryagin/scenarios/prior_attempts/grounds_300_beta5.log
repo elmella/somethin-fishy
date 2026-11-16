@@ -1,0 +1,105 @@
+Adjoint polish {'penalty': 1.0, 'J': 121.1884655465881, 'original_J': 121.19570040524943, 'projected_residual': 0.11143494597331216, 'max_constraint_violation': 0.11322655066559384, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 121.14251160265626, 'original_J': 121.14931651959276, 'projected_residual': 0.12738942659834862, 'max_constraint_violation': 0.04291335128112239, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 121.11521843942069, 'original_J': 121.12199395883947, 'projected_residual': 0.035407758925908084, 'max_constraint_violation': 0.0011462505229540287, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 121.11485891049936, 'original_J': 121.12164513995221, 'projected_residual': 0.015491586608932906, 'max_constraint_violation': 9.700060876127736e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 121.11473731123839, 'original_J': 121.12149864014373, 'projected_residual': 0.0034716142204338496, 'max_constraint_violation': 7.724340358672421e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 121.1147073498836, 'original_J': 121.12147253414759, 'projected_residual': 0.0035449710761596975, 'max_constraint_violation': 2.618754667782497e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 121.1147055114791
+Edge adjoint sweep 100 121.11470392586733
+Edge adjoint sweep 200 121.11430719717539
+Forward-backward cycle {'cycle': 0, 'initial_J': 160.89481602175098, 'J': 121.11391219473364, 'original_J': 121.12067285845559, 'projected_residual': 0.0008558071209831073, 'integrated_hamiltonian_gap': 0.278494248107263, 'max_hamiltonian_gap': 0.06486524012496894}
+Joint Hamiltonian updates: 323 stopped headings; 1 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 120.85272344903247, 'original_J': 120.86056337750044, 'projected_residual': 0.14058237348529268, 'max_constraint_violation': 0.11170288574795117, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 120.8424073610515, 'original_J': 120.85011692297066, 'projected_residual': 0.08060638466328474, 'max_constraint_violation': 0.042564323732703135, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 120.84217692752931, 'original_J': 120.84998198943876, 'projected_residual': 0.10827653962447492, 'max_constraint_violation': 0.0009331538123891203, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 120.84209102952907, 'original_J': 120.8498773139197, 'projected_residual': 0.010304192293171255, 'max_constraint_violation': 0.00010400099664309437, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 120.84208549591042, 'original_J': 120.84986709784583, 'projected_residual': 0.0015407080114915317, 'max_constraint_violation': 6.255873720828475e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 120.8420835725374, 'original_J': 120.84986275363242, 'projected_residual': 0.006323180846925069, 'max_constraint_violation': 2.777215128979549e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 120.84212754795752
+Edge adjoint sweep 100 120.84212750953805
+Edge adjoint sweep 200 120.84212551750561
+Edge adjoint sweep 300 120.81888305609947
+Edge adjoint sweep 400 120.79156133010036
+Forward-backward cycle {'cycle': 1, 'initial_J': 121.11320766928739, 'J': 120.78207297238481, 'original_J': 120.78982444273609, 'projected_residual': 0.0009996595954881048, 'integrated_hamiltonian_gap': 0.008476130636302029, 'max_hamiltonian_gap': 0.0013082013923011}
+Joint Hamiltonian updates: 203 stopped headings; 0 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 120.7819958312487, 'original_J': 120.789882171327, 'projected_residual': 0.05570440113450115, 'max_constraint_violation': 0.11194454719425173, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 120.78171541719246, 'original_J': 120.78954975896676, 'projected_residual': 0.06856266133974032, 'max_constraint_violation': 0.040600833376327694, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 120.78033029111597, 'original_J': 120.78826239200694, 'projected_residual': 0.04096715687531827, 'max_constraint_violation': 0.0009272267504070175, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 120.78020205280558, 'original_J': 120.7881055264362, 'projected_residual': 0.008388931090683727, 'max_constraint_violation': 0.00010857327055546762, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 120.78019197644547, 'original_J': 120.78810501066071, 'projected_residual': 0.0015710691574533087, 'max_constraint_violation': 6.923502555711281e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 120.7801863443327, 'original_J': 120.78810119968219, 'projected_residual': 0.0011094330531622454, 'max_constraint_violation': 2.456717479226711e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 120.78023832786431
+Edge adjoint sweep 100 120.78023831336796
+Edge adjoint sweep 200 120.78023742017609
+Edge adjoint sweep 300 120.77578685876277
+Forward-backward cycle {'cycle': 2, 'initial_J': 120.78207297238478, 'J': 120.77578436969107, 'original_J': 120.78376352305858, 'projected_residual': 0.000885855210045372, 'integrated_hamiltonian_gap': 0.0033281511122277593, 'max_hamiltonian_gap': 0.0006135394169671919}
+{'method': 'Pontryagin forward/backward adjoints and joint Hamiltonian control updates', 'residual_coordinates': 'Hull-edge arc lengths / 20 and speed fractions', 'initialization': 'Deterministic coverage assignment; no route-optimized solution used', 'execution': 'State-feedback attraction reconstruction; NOT a fixed raw-u table', 'source': '/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/grounds_300_beta5.npz', 'eta': 0.5, 'travel_smoothing': 0.001, 'steps': 150, 'J': 120.77578436969108, 'original_J': 120.78376352305858, 'harvested': 8.92078794545837, 'crowding': 7.531007965371055, 'travel': 5.3315501035245925, 'terminal_fish': 107.92120545416294, 'distance_per_boat': [150.93388421169647, 92.36600217369336, 105.17757089861323, 46.461280686417574, 138.21627238203857], 'initial_J': 160.89481602175098, 'history_scope': 'Saved accepted optimization cycles/iterates', 'projected_residual': 0.0008858552100700201, 'gradient_tolerance': 0.001, 'integrated_hamiltonian_gap': 0.010917303232106438, 'max_hamiltonian_gap': 0.0024758207108538364, 'hamiltonian_tolerance': 0.005, 'hamiltonian_time_samples': 450, 'converged': False, 'status': 'Residual tolerances not met', 'optimizer_termination': 'Numerical residual tolerances met', 'continuous_replay': {'max_position_error': 2.8573339250215213e-08, 'max_fish_error': 2.967799617170641e-13, 'J': 120.77578436963692, 'original_J': 120.78376352305234, 'rtol': 1e-09}, 'original_equation_feedback_replays': [{'rtol': 1e-08, 'max_step': 0.5, 'max_position_error': 4.574275180857512e-09, 'max_fish_error': 5.364077237945963e-13, 'original_objective': 120.78376352298716}, {'rtol': 1e-10, 'max_step': 0.25, 'max_position_error': 2.7469582164485473e-11, 'max_fish_error': 1.0340339695602552e-13, 'original_objective': 120.78376352304822}], 'original_control_checks': {'minimum_center_clearance': 6.244408209720086e-07, 'max_velocity_reconstruction_error': 4.6629367034256575e-15, 'attraction_min': 0.0, 'attraction_max': 10.0, 'speed_max': 0.9999952207867663}, 'travel_smoothing_uniform_cost_bound': 0.015, 'global_optimality_claim': False, 'original_unregularized_PMP_convergence_claim': False}
+Joint update 0 0.0033281511122277593 173 3
+Edge adjoint sweep 0 120.77576354576193
+Edge adjoint sweep 100 120.77574809353712
+Edge adjoint sweep 200 120.77573035080042
+Edge adjoint sweep 300 120.77572882816733
+Edge adjoint sweep 400 120.77572811934104
+Edge adjoint sweep 500 120.77572741685933
+Edge adjoint sweep 600 120.7757268763909
+Edge adjoint sweep 700 120.77572598074136
+Edge adjoint sweep 800 120.7757254451306
+Edge adjoint sweep 900 120.77572507814736
+Edge adjoint sweep 1000 120.77572482205497
+Edge adjoint sweep 1100 120.77572469695696
+Edge adjoint sweep 1200 120.77572454800176
+Edge adjoint sweep 1300 120.77572435325861
+Edge adjoint sweep 1400 120.7757241772042
+Edge adjoint sweep 1500 120.775724037936
+Edge adjoint sweep 1600 120.77572386816283
+Edge adjoint sweep 1700 120.77572368605092
+Edge adjoint sweep 1800 120.77572354345358
+Edge adjoint sweep 1900 120.77572343575346
+Edge adjoint sweep 2000 120.77572333573303
+Edge adjoint sweep 2100 120.77572324790353
+Edge adjoint sweep 2200 120.7757231554863
+Edge adjoint sweep 2300 120.77572308294012
+Edge adjoint sweep 2400 120.77572300716727
+Edge adjoint sweep 2500 120.77572294916583
+Edge adjoint sweep 2600 120.77572288951923
+Edge adjoint sweep 2700 120.77572282821944
+Edge adjoint sweep 2800 120.77572278879745
+Edge adjoint sweep 2900 120.77572274890798
+Edge adjoint sweep 3000 120.77572269234722
+REFINED {'cycle': 0, 'J': 120.77572268722562, 'projected_residual': 0.00011013078709787294, 'integrated_hamiltonian_gap': 0.003266364289404474, 'max_hamiltonian_gap': 0.0006173091195160358}
+{'method': 'Pontryagin forward/backward adjoints and joint Hamiltonian control updates', 'residual_coordinates': 'Hull-edge arc lengths / 20 and speed fractions', 'initialization': 'Coverage initialization followed by adjoint refinement', 'execution': 'State-feedback attraction reconstruction; NOT a fixed raw-u table', 'source': '/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/grounds_300_beta5.npz', 'eta': 0.5, 'travel_smoothing': 0.001, 'steps': 150, 'J': 120.77572268722565, 'original_J': 120.78388022532364, 'harvested': 8.92078703685564, 'crowding': 7.530949596683216, 'travel': 5.331634314204439, 'terminal_fish': 107.92129631443599, 'distance_per_boat': [150.9346102506586, 92.36721370047691, 105.18378592304052, 46.46130098037072, 138.21652056589713], 'initial_J': 120.77578436969108, 'history_scope': 'Saved accepted optimization cycles/iterates', 'projected_residual': 0.00011013079031307882, 'gradient_tolerance': 0.001, 'integrated_hamiltonian_gap': 0.01082727502327981, 'max_hamiltonian_gap': 0.0024804644129279717, 'hamiltonian_tolerance': 0.005, 'hamiltonian_time_samples': 450, 'converged': False, 'status': 'Residual tolerances not met', 'optimizer_termination': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'continuous_replay': {'max_position_error': 2.7106608513349784e-08, 'max_fish_error': 2.9917734956086406e-13, 'J': 120.77572268719041, 'original_J': 120.78388022532283, 'rtol': 1e-09}, 'original_equation_feedback_replays': [{'rtol': 1e-08, 'max_step': 0.5, 'max_position_error': 4.574278733571191e-09, 'max_fish_error': 5.41223316163908e-13, 'original_objective': 120.78388022525355}, {'rtol': 1e-10, 'max_step': 0.25, 'max_position_error': 2.7466029450806673e-11, 'max_fish_error': 1.0343809142554505e-13, 'original_objective': 120.78388022531354}], 'original_control_checks': {'minimum_center_clearance': 3.524358543124743e-07, 'max_velocity_reconstruction_error': 4.6351811278100286e-15, 'attraction_min': 0.0, 'attraction_max': 10.0, 'speed_max': 0.99999522077313}, 'travel_smoothing_uniform_cost_bound': 0.015, 'global_optimality_claim': False, 'original_unregularized_PMP_convergence_claim': False}
+Joint update 0 0.003266364289404474 15 1
+Edge adjoint sweep 0 120.77572423602629
+Edge adjoint sweep 100 120.77572073600058
+Edge adjoint sweep 200 120.77572018675498
+Edge adjoint sweep 300 120.77571952651772
+Edge adjoint sweep 400 120.77571940763039
+Edge adjoint sweep 500 120.77571938138797
+Edge adjoint sweep 600 120.77571933956357
+Edge adjoint sweep 700 120.7757192680236
+Edge adjoint sweep 800 120.77571921236036
+Edge adjoint sweep 900 120.77571916107834
+Edge adjoint sweep 1000 120.77571908140331
+Edge adjoint sweep 1100 120.7757190335253
+Edge adjoint sweep 1200 120.77571898918414
+Edge adjoint sweep 1300 120.77571888523299
+Edge adjoint sweep 1400 120.77571876469534
+Edge adjoint sweep 1500 120.77571870036545
+Edge adjoint sweep 1600 120.77571865055471
+Edge adjoint sweep 1700 120.77571861360227
+Edge adjoint sweep 1800 120.77571858208447
+Edge adjoint sweep 1900 120.77571854800392
+Edge adjoint sweep 2000 120.77571853004858
+Edge adjoint sweep 2100 120.77571851091255
+Edge adjoint sweep 2200 120.77571849913924
+Edge adjoint sweep 2300 120.77571849113531
+Edge adjoint sweep 2400 120.77571847792987
+Edge adjoint sweep 2500 120.77571846748245
+Edge adjoint sweep 2600 120.77571845399898
+Edge adjoint sweep 2700 120.77571844259347
+Edge adjoint sweep 2800 120.77571842999976
+Edge adjoint sweep 2900 120.77571841711779
+Edge adjoint sweep 3000 120.77571840226383
+REFINED {'cycle': 0, 'J': 120.77571840216021, 'projected_residual': 0.00018706992615712527, 'integrated_hamiltonian_gap': 0.0032868954258116635, 'max_hamiltonian_gap': 0.0006121976027659931}
+{'method': 'Pontryagin forward/backward adjoints and joint Hamiltonian control updates', 'residual_coordinates': 'Hull-edge arc lengths / 20 and speed fractions', 'initialization': 'Coverage initialization followed by adjoint refinement', 'execution': 'State-feedback attraction reconstruction; NOT a fixed raw-u table', 'source': '/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/grounds_300_beta5.npz', 'eta': 0.5, 'travel_smoothing': 0.001, 'steps': 150, 'J': 120.77571840216024, 'original_J': 120.7839045531543, 'harvested': 8.92078665847217, 'crowding': 7.53091712276483, 'travel': 5.331653277606554, 'terminal_fish': 107.92133415278293, 'distance_per_boat': [150.9345865973275, 92.36725055804297, 105.18584003534444, 46.46128089881901, 138.21636967112138], 'initial_J': 120.77572268722565, 'history_scope': 'Saved accepted optimization cycles/iterates', 'projected_residual': 0.00018706992615709155, 'gradient_tolerance': 0.001, 'integrated_hamiltonian_gap': 0.010853981900925453, 'max_hamiltonian_gap': 0.0024748897369731605, 'hamiltonian_tolerance': 0.005, 'hamiltonian_time_samples': 450, 'converged': False, 'status': 'Residual tolerances not met', 'optimizer_termination': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'continuous_replay': {'max_position_error': 1.8094112874678103e-08, 'max_fish_error': 3.0055472000078964e-13, 'J': 120.77571840223959, 'original_J': 120.78390455315484, 'rtol': 1e-09}, 'original_equation_feedback_replays': [{'rtol': 1e-08, 'max_step': 0.5, 'max_position_error': 4.57428228628487e-09, 'max_fish_error': 5.439294847864318e-13, 'original_objective': 120.78390455308946}, {'rtol': 1e-10, 'max_step': 0.25, 'max_position_error': 2.7466029450806673e-11, 'max_fish_error': 1.0355952206886343e-13, 'original_objective': 120.7839045531439}], 'original_control_checks': {'minimum_center_clearance': 4.120358284770873e-07, 'max_velocity_reconstruction_error': 4.6351811278100286e-15, 'attraction_min': 0.0, 'attraction_max': 10.0, 'speed_max': 0.9999952207834788}, 'travel_smoothing_uniform_cost_bound': 0.015, 'global_optimality_claim': False, 'original_unregularized_PMP_convergence_claim': False}
+SCENARIO_DONE grounds_300 5.0 converged False

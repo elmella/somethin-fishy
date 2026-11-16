@@ -1,0 +1,50 @@
+{
+  "notebook": "igofishing.ipynb",
+  "J_history": [
+    212.57121670523696,
+    115.37696999844417,
+    15.349098170053944,
+    14.357335232884363,
+    13.566657725015803,
+    13.515530968153032
+  ],
+  "harvested": 6.999704412429082,
+  "stop_reason": "No improving tested route/dwell change",
+  "method": "Direct one/two-ground route and first-dwell optimization",
+  "speed_min": 0.0,
+  "speed_max": 1.0,
+  "verification": {
+    "replays": [
+      {
+        "rtol": 1e-07,
+        "max_step": 2.0,
+        "objective": 13.515530968157528,
+        "harvested": 6.999704412429037,
+        "max_fish_error": 2.3636962612899604e-14,
+        "max_position_error": 1.4210854715202004e-13
+      },
+      {
+        "rtol": 1e-09,
+        "max_step": 0.5,
+        "objective": 13.51553096815298,
+        "harvested": 6.999704412429082,
+        "max_fish_error": 3.678155870157074e-17,
+        "max_position_error": 1.0800249583553523e-12
+      }
+    ],
+    "quadrature": {
+      "remaining": [
+        6.162558088952245e-08,
+        2.3337703211842765e-06,
+        7.043315934061825e-11,
+        0.00012264239674388553,
+        0.00017043364056944335,
+        1.160661640205523e-07,
+        1.105097994975262e-12
+      ],
+      "crowding": 6.131649261150002
+    },
+    "minimum_center_clearance": 0.13419018730207724
+  },
+  "note": "Restricted feasible-control search; no global optimum or PMP convergence claim."
+}

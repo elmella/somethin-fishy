@@ -1,0 +1,45 @@
+{
+  "notebook": "updated_sam_fishin.ipynb",
+  "J_history": [
+    13.892046705120892,
+    12.224211673100251,
+    12.051393663366056,
+    12.041770816474962,
+    12.041450208694057,
+    12.0413989500222
+  ],
+  "harvested": 6.991279966017835,
+  "stop_reason": "Numerical regularized-PMP tolerances met",
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "speed_min": 0.0,
+  "speed_max": 0.9999952994870946,
+  "verification": {
+    "original_equation_feedback_replays": [
+      {
+        "rtol": 1e-08,
+        "max_step": 0.5,
+        "max_position_error": 6.368843230575294e-09,
+        "max_fish_error": 5.794973875761222e-14,
+        "original_objective": 12.053427048350947
+      },
+      {
+        "rtol": 1e-10,
+        "max_step": 0.25,
+        "max_position_error": 3.5417002663962194e-11,
+        "max_fish_error": 1.3745515142771225e-14,
+        "original_objective": 12.053427048360156
+      }
+    ],
+    "original_control_checks": {
+      "minimum_center_clearance": 0.0266662661730854,
+      "max_velocity_reconstruction_error": 1.0013292278676644e-12,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952883029749
+    },
+    "integrated_hamiltonian_gap": 0.0012438705550679848,
+    "max_hamiltonian_gap": 0.0006251959416423099,
+    "projected_residual": 0.00031241811234838934
+  },
+  "note": "Saved regularized PMP feedback policy; no unregularized/global-optimum claim."
+}
