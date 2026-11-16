@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "minimum_center_clearance": 0.09612406046607196,
+    "max_velocity_reconstruction_error": 2.098321516541546e-14,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999926016142608
+  },
+  "replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 71.56046646436918,
+      "max_fish_error": 0.9995553471375773,
+      "original_objective": 209.3394762044252
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.671721433151539,
+      "max_fish_error": 1.7390658562834038e-05,
+      "original_objective": 9.644087165519016
+    }
+  ]
+}

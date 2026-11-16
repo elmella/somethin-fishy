@@ -1,0 +1,15 @@
+{
+  "notebook": "updated_sam_fishin.ipynb",
+  "J_history": [
+    7514.350231754991,
+    594.6010393175292
+  ],
+  "harvested": 2.002661981869416,
+  "stop_reason": "Numerical adjoint failure: Adjoint solve exceeded 20 seconds; no convergence claim.. No convergence claim.",
+  "costate_failed": true,
+  "speed_min": 0.0,
+  "speed_max": 1.0,
+  "forward_rtol": 1e-06,
+  "forward_atol": 1e-08,
+  "note": "Continuous-model optimality and mesh convergence are not established."
+}

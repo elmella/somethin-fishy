@@ -1,0 +1,157 @@
+{
+  "method": "Pontryagin forward/backward adjoints, joint Hamiltonian updates, hull-edge control polishing",
+  "initialization": "Benchmark-initialized adjoint continuation; 200-to-400 grid refinement",
+  "execution": "State-feedback attraction reconstruction; NOT a fixed raw-u table",
+  "source": "audit/results/pmp/tnc400.npz",
+  "eta": 0.5,
+  "travel_smoothing": 0.001,
+  "steps": 400,
+  "J": 9.593899643896652,
+  "original_J": 9.605550841067771,
+  "harvested": 6.997296123850151,
+  "crowding": 4.264958240436154,
+  "travel": 5.070204985646727,
+  "terminal_fish": 0.27038761498488895,
+  "distance_per_boat": [
+    165.2240425765197,
+    106.20407145879379,
+    66.32570495406772,
+    43.41009221978219,
+    125.85658735550922
+  ],
+  "initial_J": null,
+  "history": [],
+  "history_scope": "No verified per-iteration history retained for exploratory refinement; use validated endpoints",
+  "projected_residual": 6.032875275456019e-05,
+  "gradient_tolerance": 0.001,
+  "integrated_hamiltonian_gap": 0.00020098738454481658,
+  "max_hamiltonian_gap": 4.693970168779052e-05,
+  "hamiltonian_tolerance": 0.005,
+  "hamiltonian_time_samples": 1200,
+  "converged": true,
+  "status": "Numerical regularized-PMP tolerances met",
+  "optimizer_termination": "Max. number of function evaluations reached",
+  "continuous_replay": {
+    "max_position_error": 1.1664269550237805e-10,
+    "max_fish_error": 2.494003809895562e-16,
+    "J": 9.593899643896648,
+    "original_J": 9.60555084106788,
+    "rtol": 1e-09
+  },
+  "original_equation_feedback_replays": [
+    {
+      "rtol": 1e-08,
+      "max_step": 0.5,
+      "max_position_error": 1.2145363825766253e-08,
+      "max_fish_error": 5.1163500519590954e-14,
+      "original_objective": 9.605550841039978
+    },
+    {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.908429218630772e-11,
+      "max_fish_error": 9.508453052697874e-17,
+      "original_objective": 9.605550841067826
+    }
+  ],
+  "original_control_checks": {
+    "minimum_center_clearance": 0.0938076132776628,
+    "max_velocity_reconstruction_error": 3.086420008457935e-14,
+    "attraction_min": 0.0,
+    "attraction_max": 10.0,
+    "speed_max": 0.9999927114191643
+  },
+  "travel_smoothing_uniform_cost_bound": 0.02,
+  "regularization_sensitivity": [
+    {
+      "eta": 0.1,
+      "original_J": 9.608678751037449,
+      "harvested": 6.997305254742166,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.25,
+      "original_J": 9.605712709600727,
+      "harvested": 6.997303231765894,
+      "reoptimized": false
+    },
+    {
+      "eta": 0.5,
+      "original_J": 9.605550841067771,
+      "harvested": 6.997296123850151,
+      "reoptimized": false
+    },
+    {
+      "eta": 1.0,
+      "original_J": 9.611536012619975,
+      "harvested": 6.9972547278186,
+      "reoptimized": false
+    }
+  ],
+  "global_optimality_claim": false,
+  "original_unregularized_PMP_convergence_claim": false,
+  "problem": {
+    "grounds": [
+      [
+        74.90802376947249,
+        190.14286128198324
+      ],
+      [
+        146.398788362281,
+        119.73169683940732
+      ],
+      [
+        31.203728088487303,
+        31.19890406724053
+      ],
+      [
+        11.616722433639893,
+        173.23522915498702
+      ],
+      [
+        120.22300234864176,
+        141.6145155592091
+      ],
+      [
+        4.116898859160489,
+        193.98197043239887
+      ],
+      [
+        166.48852816008434,
+        42.46782213565523
+      ]
+    ],
+    "ships": [
+      [
+        36.364993441420125,
+        36.68090197068676
+      ],
+      [
+        60.84844859190754,
+        104.95128632644757
+      ],
+      [
+        86.38900372842315,
+        58.245828039608384
+      ],
+      [
+        122.3705789444759,
+        27.898772130408368
+      ],
+      [
+        58.42892970704363,
+        73.27236865873834
+      ]
+    ],
+    "T": 400.0,
+    "alpha": 0.005,
+    "sigma": 0.05,
+    "rate": 0.05,
+    "beta": 5.0,
+    "gamma": 0.01,
+    "delta": 100.0,
+    "epsilon": 0.0001,
+    "V": 1.0,
+    "F0": 1.0
+  }
+}

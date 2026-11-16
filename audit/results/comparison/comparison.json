@@ -1,0 +1,44 @@
+{
+  "T": 400.0,
+  "original_commit": "23043fe5525d3b27dc0401f733fc8a9ec169ca26",
+  "notebook": "random/updated_sam_fishin.ipynb",
+  "description": "Original trajectory displayed before its sole control update versus saved accepted repaired control. Same dynamics, map, weights and horizon; initialization and numerics differ.",
+  "caution": "Neither trajectory establishes convergence or mesh-independent accuracy. Crowding quadrature is sampled at 16001 times. Original displayed state was stale after its update.",
+  "accepted_control_status": "Numerical adjoint failure: Adjoint solve exceeded 20 seconds; no convergence claim.. No convergence claim.",
+  "runs": [
+    {
+      "label": "Original: displayed run",
+      "harvested": 3.981605146181011,
+      "sampled_J": 24580298.829219624,
+      "sampled_crowding": 24579980.07880345,
+      "sampled_travel": 16.910930791904658,
+      "terminal_fish": 301.8394853818989,
+      "largest_interpolated_stock_increase": 0.000726615879381054,
+      "minimum_sampled_separation": 2.241279712640964e-09
+    },
+    {
+      "label": "Repair: starting guess",
+      "harvested": 2.9999771932039403,
+      "sampled_J": 7514.350434015159,
+      "sampled_crowding": 7112.092297718621,
+      "sampled_travel": 2.2558556169325383,
+      "terminal_fish": 400.002280679606,
+      "largest_interpolated_stock_increase": 0.0,
+      "minimum_sampled_separation": 0.45066317172319587
+    },
+    {
+      "label": "Repair: accepted update",
+      "harvested": 2.002661981869416,
+      "sampled_J": 594.6474492938046,
+      "sampled_crowding": 88.81762673622676,
+      "sampled_travel": 6.096020744519388,
+      "terminal_fish": 499.73380181305845,
+      "largest_interpolated_stock_increase": 0.0,
+      "minimum_sampled_separation": 1.3550136046105015
+    }
+  ],
+  "repair_integrated_J": [
+    7514.350231754991,
+    594.6010393175292
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "case": "baseline_300",
+    "beta": 5.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/baseline_300_beta5.log"
+  },
+  {
+    "case": "baseline_300",
+    "beta": 0.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/baseline_300_beta0.log"
+  },
+  {
+    "case": "grounds_300",
+    "beta": 5.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/grounds_300_beta5.log"
+  },
+  {
+    "case": "grounds_300",
+    "beta": 0.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/grounds_300_beta0.log"
+  },
+  {
+    "case": "fleet_300",
+    "beta": 5.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/fleet_300_beta5.log"
+  },
+  {
+    "case": "fleet_300",
+    "beta": 0.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/fleet_300_beta0.log"
+  },
+  {
+    "case": "harbor_300",
+    "beta": 5.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/harbor_300_beta5.log"
+  },
+  {
+    "case": "harbor_300",
+    "beta": 0.0,
+    "returncode": 0,
+    "log": "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/scenarios/harbor_300_beta0.log"
+  }
+]

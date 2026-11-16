@@ -1,0 +1,9 @@
+{
+  "notebook": "random/updated_sam_fishin.ipynb",
+  "policy": "coverage_400_verified",
+  "original_harvest": 3.981605146181011,
+  "final_harvest": 6.991279966017835,
+  "original_cost_of_final": 12.05342704836136,
+  "frames": 161,
+  "horizon": 400.0
+}

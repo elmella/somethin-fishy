@@ -1,0 +1,170 @@
+[
+  {
+    "scenario": "baseline_300",
+    "description": "5 boats \u00b7 7 grounds \u00b7 original dispersed starts",
+    "runs": [
+      {
+        "label": "No optimal control",
+        "harvested": 3.7791415965728437,
+        "distance": 1473.2270653953567,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Original broken optimal control",
+        "harvested": 3.803146348576536,
+        "distance": 1472.8977647936242,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 5",
+        "harvested": 6.908178894834915,
+        "distance": 545.7773077598642,
+        "converged": true,
+        "projected_residual": 0.0009312715562548313,
+        "integrated_hamiltonian_gap": 0.004333581330361863,
+        "control_intervals": 150
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 0",
+        "harvested": 6.909069169170513,
+        "distance": 541.8544848646212,
+        "converged": true,
+        "projected_residual": 5.454100802938891e-06,
+        "integrated_hamiltonian_gap": 0.00378041677499341,
+        "control_intervals": 150
+      }
+    ]
+  },
+  {
+    "scenario": "grounds_300",
+    "description": "5 boats \u00b7 10 grounds \u00b7 original dispersed starts",
+    "runs": [
+      {
+        "label": "No optimal control",
+        "harvested": 4.817294612984872,
+        "distance": 1499.0897184789396,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Original broken optimal control",
+        "harvested": 5.354762883586043,
+        "distance": 1195.5090825177808,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 5",
+        "harvested": 9.824816319369809,
+        "distance": 710.1042799882551,
+        "converged": true,
+        "projected_residual": 0.0007750056302979758,
+        "integrated_hamiltonian_gap": 0.0034797486655290264,
+        "control_intervals": 300
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 0",
+        "harvested": 9.830011800174688,
+        "distance": 708.2468642412513,
+        "converged": true,
+        "projected_residual": 9.908551707938328e-06,
+        "integrated_hamiltonian_gap": 0.0018667817518025758,
+        "control_intervals": 300
+      }
+    ]
+  },
+  {
+    "scenario": "fleet_300",
+    "description": "8 boats \u00b7 12 grounds \u00b7 dispersed starts",
+    "runs": [
+      {
+        "label": "No optimal control",
+        "harvested": 7.951582734349459,
+        "distance": 2398.6087585839837,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Original broken optimal control",
+        "harvested": 7.91424742415876,
+        "distance": 2398.473617322555,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 5",
+        "harvested": 11.889356589580224,
+        "distance": 742.2943303850869,
+        "converged": true,
+        "projected_residual": 0.0009978405992150385,
+        "integrated_hamiltonian_gap": 0.002908506447947134,
+        "control_intervals": 300
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 0",
+        "harvested": 11.90120416590713,
+        "distance": 685.3992115963016,
+        "converged": true,
+        "projected_residual": 0.0009920670957512718,
+        "integrated_hamiltonian_gap": 0.0031726958273026067,
+        "control_intervals": 300
+      }
+    ]
+  },
+  {
+    "scenario": "harbor_300",
+    "description": "5 boats \u00b7 7 grounds \u00b7 starts spaced along y = 10",
+    "runs": [
+      {
+        "label": "No optimal control",
+        "harvested": 1.999999332431682,
+        "distance": 1470.068971208714,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Original broken optimal control",
+        "harvested": 1.9999993171038595,
+        "distance": 1470.029798928538,
+        "converged": null,
+        "projected_residual": null,
+        "integrated_hamiltonian_gap": null,
+        "control_intervals": null
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 5",
+        "harvested": 6.439823785671064,
+        "distance": 759.5921831273095,
+        "converged": true,
+        "projected_residual": 0.0009878062468121618,
+        "integrated_hamiltonian_gap": 0.002844182592429473,
+        "control_intervals": 600
+      },
+      {
+        "label": "Repaired PMP \u00b7 \u03b2 = 0",
+        "harvested": 6.44266699323948,
+        "distance": 750.2640762497973,
+        "converged": true,
+        "projected_residual": 0.00023783213944738956,
+        "integrated_hamiltonian_gap": 0.0011037434509230063,
+        "control_intervals": 300
+      }
+    ]
+  }
+]

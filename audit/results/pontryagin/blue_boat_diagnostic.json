@@ -1,0 +1,89 @@
+{
+  "policy": "coverage_400_verified",
+  "departure_time": 124.0,
+  "G3_remaining_at_departure": 0.0024396150132286703,
+  "G6_remaining_at_departure": 0.9999999999530615,
+  "counterfactuals": [
+    {
+      "case": "Stay at G3 after t=124",
+      "original_cost": 109.47508489625119,
+      "crowding": 5.0694123137278435,
+      "travel": 3.9954750268958823,
+      "terminal_fish_penalty": 100.41019755562746,
+      "total_catch": 5.995898024443726,
+      "G3_remaining": 2.492942097018376e-09,
+      "G6_remaining": 0.9999999998434658
+    },
+    {
+      "case": "Departure shifted by -40 time units",
+      "original_cost": 13.698158575135377,
+      "crowding": 6.1775656984135345,
+      "travel": 5.647191918091547,
+      "terminal_fish_penalty": 1.8734009586302947,
+      "total_catch": 6.981265990413697,
+      "G3_remaining": 0.014816083477857582,
+      "G6_remaining": 0.00043809839278710746
+    },
+    {
+      "case": "Departure shifted by -20 time units",
+      "original_cost": 12.385100137313282,
+      "crowding": 5.725382976355834,
+      "travel": 5.647194547383727,
+      "terminal_fish_penalty": 1.0125226135737213,
+      "total_catch": 6.989874773864263,
+      "G3_remaining": 0.00545551019479593,
+      "G6_remaining": 0.0011899552938773306
+    },
+    {
+      "case": "Departure shifted by -10 time units",
+      "original_cost": 12.135931465407886,
+      "crowding": 5.613564108693053,
+      "travel": 5.647196603588949,
+      "terminal_fish_penalty": 0.8751707531258847,
+      "total_catch": 6.991248292468741,
+      "G3_remaining": 0.0033112189306177446,
+      "G6_remaining": 0.0019607783456201907
+    },
+    {
+      "case": "Departure shifted by +0 time units",
+      "original_cost": 12.05342704836136,
+      "crowding": 5.534223739946453,
+      "travel": 5.647199910198444,
+      "terminal_fish_penalty": 0.8720033982164616,
+      "total_catch": 6.991279966017835,
+      "G3_remaining": 0.002010490868056023,
+      "G6_remaining": 0.003229911158592192
+    },
+    {
+      "case": "Departure shifted by +10 time units",
+      "original_cost": 12.124363325471935,
+      "crowding": 5.474720460717924,
+      "travel": 5.647197416295996,
+      "terminal_fish_penalty": 1.002445448458014,
+      "total_catch": 6.98997554551542,
+      "G3_remaining": 0.0012196944573247403,
+      "G6_remaining": 0.005325128071717638
+    },
+    {
+      "case": "Departure shifted by +20 time units",
+      "original_cost": 12.374780987577239,
+      "crowding": 5.427683079519918,
+      "travel": 5.64719109585118,
+      "terminal_fish_penalty": 1.2999068122061428,
+      "total_catch": 6.9870009318779385,
+      "G3_remaining": 0.000739945946965231,
+      "G6_remaining": 0.008779490219537053
+    },
+    {
+      "case": "Departure shifted by +40 time units",
+      "original_cost": 13.764872532400751,
+      "crowding": 5.356083443461712,
+      "travel": 5.64717631458858,
+      "terminal_fish_penalty": 2.7616127743504615,
+      "total_catch": 6.972383872256495,
+      "G3_remaining": 0.000272331505270486,
+      "G6_remaining": 0.02386416428263212
+    }
+  ],
+  "note": "Feasible fixed-policy comparisons using the validated analytic evaluator; other boats unchanged and no fleet reoptimization."
+}

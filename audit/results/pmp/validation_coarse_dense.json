@@ -1,0 +1,13 @@
+{
+  "replay": {
+    "max_position_error": 4.9923784217753564e-08,
+    "max_fish_error": 5.244124362188685e-13,
+    "J": 9.594140796813667,
+    "original_J": 9.605797599225328,
+    "rtol": 1e-09
+  },
+  "integrated_hamiltonian_gap": 0.0004984162211109711,
+  "max_hamiltonian_gap": 9.121821550442475e-05,
+  "samples": 600,
+  "source": "tnc200_final"
+}

@@ -1,0 +1,243 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\allowdisplaybreaks
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\R}{\mathbb{R}}
+\title{Fishing control: equations before and after}
+\author{}
+\date{October 23, 2026}
+\begin{document}
+\maketitle
+\noindent
+The before equations below use the supplied project manuscript, with speed
+renamed \(v_i=u_{i,K+1}\) for readability. The after equations describe the
+regularized Pontryagin feedback solver now used by the notebooks.
+This is not a claim of convergence for the unmodified raw-open-loop problem.
+The animation uses the 400-unit notebook's current saved policy,
+\texttt{coverage\_400\_verified}.
+
+\section*{1. Movement and controls}
+Write \(w_{ij}=f_j-x_i\), \(\rho_{ij}=\norm{w_{ij}}\),
+\(d_{ij}=w_{ij}/\rho_{ij}\), and
+\(g_{ij}=\exp(-\alpha\rho_{ij}^2)\).
+
+\paragraph{Before: manuscript movement law.}
+\begin{align}
+s_i&=\sum_{j=1}^{K}u_{ij}g_{ij}F_jd_{ij},\\
+\dot x_i&=v_i\frac{s_i}{\norm{s_i}},
+&0\leq u_{ij}\leq10,\quad 0\leq v_i\leq V .
+\end{align}
+The original code also inserted small denominator floors. Those floors do
+not appear in the manuscript and can accidentally throttle distant boats.
+
+\paragraph{Equivalent coordinates, before regularization.}
+For positive stock, nonzero attraction, and \(\rho_{ij}>0\), define
+\begin{align}
+\theta_{ij}
+&=\frac{u_{ij}g_{ij}F_j/\rho_{ij}}
+        {\sum_m u_{im}g_{im}F_m/\rho_{im}},&
+z_i&=\sum_j\theta_{ij}f_j .
+\end{align}
+Then \(z_i\in\operatorname{conv}\{f_1,\ldots,f_K\}\) and
+\[
+\frac{s_i}{\norm{s_i}}
+=\frac{z_i-x_i}{\norm{z_i-x_i}}.
+\]
+This step is an algebraic reparameterization, wherever both sides are defined.
+
+\paragraph{After: the regularized feedback family.}
+\begin{align}
+q_i&=z_i-x_i,&R_i&=\sqrt{\norm{q_i}^2+\eta^2},&\eta&=0.5,\\
+\dot x_i&=a_iV\frac{q_i}{R_i},&
+0\leq a_i&\leq1,&
+z_i&\in\operatorname{conv}\{f_j\}.
+\end{align}
+The actual physical speed is
+\[
+v_i=a_iV\frac{\norm{q_i}}{R_i}\leq V.
+\]
+For a convex representation \(z_i=\sum_j\theta_{ij}f_j\), admissible original
+attractions can be reconstructed as
+\[
+u_{ij}=c_i\,\frac{\theta_{ij}\rho_{ij}}{g_{ij}F_j},
+\qquad c_i>0\ \text{chosen so that}\quad \max_j u_{ij}\leq10 .
+\]
+The implementation uses a well-conditioned pair of ground rays to realize
+the desired heading and logarithmic scaling to avoid underflow. Attractions
+and physical speed are recomputed from the current state during execution.
+At zero commanded speed the boat is stationary. Tested paths avoid ground
+centers. This is a restricted, regularized controller family and a feedback
+execution change, not merely a numerical tolerance.
+
+\section*{2. Fish stocks}
+Let \(C_{ij}=\exp(-\sigma\norm{f_j-x_i}^2)\).
+
+\paragraph{Before.}
+\[
+\dot F_j=-rF_j\sum_i C_{ij},\qquad F_j(0)=F_0.
+\]
+
+\paragraph{After: identical depletion, expressed in log stock.}
+\[
+\ell_j=\log(F_j/F_0),\qquad
+\dot\ell_j=-r\sum_i C_{ij},\qquad
+F_j=F_0e^{\ell_j},\qquad \ell_j(0)=0.
+\]
+This is a coordinate change; the physical fish-depletion law is unchanged.
+
+\section*{3. Objective}
+Define
+\[
+B(x)=\beta\sum_{i=1}^{N}\sum_{l=1}^{N}
+\frac{1}{\varepsilon+\norm{x_l-x_i}^2}.
+\]
+
+\paragraph{Before.}
+\[
+J=\int_0^T\left[B(x)+\gamma\sum_i v_i\right]\,dt
+  +\delta\sum_j F_j(T).
+\]
+
+\paragraph{After: small, explicit travel-cost smoothing.}
+\[
+J_\nu=\int_0^T\left[
+ B(x)+\gamma\sum_i\left(\sqrt{v_i^2+\nu^2}-\nu\right)
+ \right]\,dt+\delta\sum_j F_0e^{\ell_j(T)},
+\qquad \nu=0.001.
+\]
+For any fixed policy,
+\[
+0\leq J-J_\nu\leq\gamma NT\nu
+=\begin{cases}0.02,&T=400,\\0.03,&T=600.\end{cases}
+\]
+Reported outcome comparisons evaluate the original \(J\), not \(J_\nu\).
+Both reported objectives omit the same irrelevant self-pair constant:
+\(J^*=J-\beta NT/\varepsilon\).
+No reward weights, movement bonus, or compulsory-visit term were added.
+
+\section*{4. Hamiltonian and control maximization}
+The maximum-Hamiltonian convention remains \(H=p^\top f-L\).
+
+\paragraph{Before: original physical variables.}
+\[
+H=\sum_i p_i^\top v_i\frac{s_i}{\norm{s_i}}
+  +\sum_jp_{F_j}\left(-rF_j\sum_iC_{ij}\right)
+  -B(x)-\gamma\sum_i v_i .
+\]
+The manuscript's speed rule used \(p_i^\top s_i/\norm{s_i}+\gamma>0\).
+That sign is an error: this Hamiltonian gives a threshold of
+\(p_i^\top s_i/\norm{s_i}-\gamma>0\).
+At equality any admissible speed maximizes the unsmoothed speed term.
+The manuscript also imposed an interior stationarity equation
+\[
+p_i^\top\left(d_{ij}-\operatorname{proj}_{s_i}d_{ij}\right)=0.
+\]
+It is not a complete maximization rule for bounded attractions and does
+not handle the stopped-heading degeneracy by itself.
+
+\paragraph{After: transformed feedback variables.}
+\[
+H_\nu=\sum_i p_i^\top a_iV\frac{q_i}{R_i}
+ -r\sum_jp_{\ell_j}\sum_iC_{ij}
+ -B(x)-\gamma\sum_i\left(\sqrt{v_i^2+\nu^2}-\nu\right).
+\]
+Controls are updated jointly:
+\[
+(z_i,a_i)\in\underset{
+ z\in\operatorname{conv}\{f_j\},\ 0\leq a\leq1}
+ {\arg\max}\ H_\nu .
+\]
+For a fixed nonzero \(q_i\), write \(e_i=q_i/\norm{q_i}\),
+\(k_i=p_i^\top e_i\), and
+\(\bar v_i=V\norm{q_i}/R_i\). The speed maximizer is
+\[
+v_i^*=
+\begin{cases}
+0,&k_i\leq0,\\
+\min\left\{\bar v_i,\dfrac{\nu k_i}{\sqrt{\gamma^2-k_i^2}}\right\},
+  &0<k_i<\gamma,\\
+\bar v_i,&k_i\geq\gamma.
+\end{cases}
+\qquad
+a_i^*=v_i^*/\bar v_i .
+\]
+At \(q_i=0\), physical speed is zero. Target maximization is searched along
+the convex-hull edges. Forward--backward sweeps provide adjoint gradients;
+joint Hamiltonian updates change inactive headings that gradient-only
+updates cannot discover at zero speed.
+
+\section*{5. Costates: original manuscript versus implemented equations}
+\paragraph{Before: as written in the manuscript.}
+With notation as above, the manuscript used
+\begin{align}
+D_xs_i
+&=\sum_j\frac{u_{ij}g_{ij}F_j}{\rho_{ij}}
+ \left[\left(\alpha+\frac{1}{\rho_{ij}^2}\right)
+ w_{ij}w_{ij}^{\top}-I\right],\\
+\dot p_i
+&=4\beta\sum_l
+ \frac{x_l-x_i}{(\varepsilon+\norm{x_l-x_i}^2)^2}
+ -2r\sigma\sum_jp_{F_j}C_{ij}w_{ij}
+ -\frac{v_i}{\norm{s_i}}
+ \left(I-\frac{s_is_i^\top}{\norm{s_i}^2}\right)D_xs_i\,p_i,\\
+\dot p_{F_j}&=rp_{F_j}\sum_iC_{ij},&
+p_i(T)&=0,\qquad p_{F_j}(T)=-\delta.
+\end{align}
+These equations contain errors, separate from the later regularization:
+the Gaussian derivative needs \(2\alpha\); the position fish term has
+the wrong sign and lacks \(F_j\); the movement adjoint has the wrong
+matrix order; and the stock adjoint omits stock-to-motion coupling.
+
+For reference, retaining the original physical variables would instead give
+\begin{align}
+D_xs_i
+&=\sum_j\frac{u_{ij}g_{ij}F_j}{\rho_{ij}}
+ \left[\left(2\alpha+\frac{1}{\rho_{ij}^2}\right)
+ w_{ij}w_{ij}^{\top}-I\right],\\
+P_i&=I-\frac{s_is_i^\top}{\norm{s_i}^2},\\
+\dot p_i
+&=\nabla_{x_i}B
+ +2r\sigma\sum_jp_{F_j}F_jC_{ij}w_{ij}
+ -\frac{v_i}{\norm{s_i}}(D_xs_i)^\top P_i p_i,\\
+\dot p_{F_j}
+&=rp_{F_j}\sum_iC_{ij}
+ -\sum_i\frac{v_i u_{ij}g_{ij}}{\norm{s_i}}p_i^\top P_id_{ij}.
+\end{align}
+
+\paragraph{After: adjoints of the implemented regularized feedback system.}
+\begin{align}
+A_i:=D_{x_i}\dot x_i
+ &=-a_iV\left(\frac{I}{R_i}-\frac{q_iq_i^\top}{R_i^3}\right),\\
+p_i(T)&=0,&
+p_{\ell_j}(T)&=-\delta F_j(T),&
+\dot p_{\ell_j}&=0,\\
+\dot p_i
+ &=\nabla_{x_i}B
+ +\nabla_{x_i}L_{\mathrm{travel},\nu}
+ +2r\sigma\sum_jp_{\ell_j}C_{ij}w_{ij}
+ -A_i^\top p_i ,
+\end{align}
+where
+\begin{align}
+\nabla_{x_i}B
+ &=4\beta\sum_l
+ \frac{x_l-x_i}{(\varepsilon+\norm{x_l-x_i}^2)^2},\\
+\nabla_{x_i}L_{\mathrm{travel},\nu}
+ &=-\gamma\frac{v_i}{\sqrt{v_i^2+\nu^2}}
+   \frac{a_iV\eta^2}{R_i^3}\,e_i .
+\end{align}
+The last expression has continuous value zero at \(q_i=0\).
+The constant log-stock costate is valid because the transformed feedback
+motion no longer depends on stock when \(z,a\) are held fixed.
+It must not be substituted into the original fixed-raw-attraction adjoint.
+
+\paragraph{Unchanged constraints and scope.}
+The numerical comparison uses the original notebook's five dispersed starting
+positions, seven grounds, \(F_0=1\), free terminal positions, \(u\in[0,10]\),
+and \(v\in[0,1]\). The manuscript instead writes a common harbor \(x_i(0)=h\);
+that is an existing manuscript/notebook mismatch, not a new change made for
+this comparison. Shared-harbor PMP convergence has not been validated.
+\end{document}

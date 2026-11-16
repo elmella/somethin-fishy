@@ -1,0 +1,130 @@
+{
+  "baseline_300_beta5_verified": {
+    "controls": {
+      "minimum_center_clearance": 0.0021212308468578434,
+      "max_velocity_reconstruction_error": 9.785575127985169e-15,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952883725951
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 2.745537130977027e-11,
+      "max_fish_error": 1.7756282555403402e-13,
+      "original_objective": 19.54066777849793
+    }
+  },
+  "baseline_300_beta0_verified": {
+    "controls": {
+      "minimum_center_clearance": 0.003505739785414878,
+      "max_velocity_reconstruction_error": 2.6702513572680886e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952127807924
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 5.346123543858994e-11,
+      "max_fish_error": 3.696834505184654e-13,
+      "original_objective": 14.511627931522966
+    }
+  },
+  "grounds_matched_300_beta5_verified": {
+    "controls": {
+      "minimum_center_clearance": 2.1377916115887164e-09,
+      "max_velocity_reconstruction_error": 6.908826797062586e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999959444843571
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 1.4167085282679182e-09,
+      "max_fish_error": 1.594037402075088e-14,
+      "original_objective": 33.80963655835187
+    }
+  },
+  "grounds_matched_300_beta0_verified": {
+    "controls": {
+      "minimum_center_clearance": 0.0025831468118604865,
+      "max_velocity_reconstruction_error": 3.876031035540716e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952565496446
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.3968384488835e-11,
+      "max_fish_error": 2.411265631607762e-15,
+      "original_objective": 24.081288624943905
+    }
+  },
+  "fleet_300_beta5_verified": {
+    "controls": {
+      "minimum_center_clearance": 2.8882366584316963e-11,
+      "max_velocity_reconstruction_error": 7.020161527293567e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952995020875
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.425260158313904e-11,
+      "max_fish_error": 3.95516952522712e-15,
+      "original_objective": 36.28650569344602
+    }
+  },
+  "fleet_300_beta0_verified": {
+    "controls": {
+      "minimum_center_clearance": 0.0037135412592570623,
+      "max_velocity_reconstruction_error": 9.423767002207997e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999951997373939
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 4.845901457883883e-10,
+      "max_fish_error": 3.434752482434078e-16,
+      "original_objective": 16.73357552525005
+    }
+  },
+  "harbor_deadline_300_beta5_verified": {
+    "controls": {
+      "minimum_center_clearance": 1.2537433642119241e-05,
+      "max_velocity_reconstruction_error": 9.295844026176517e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999963059921947
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 2.900719664467033e-10,
+      "max_fish_error": 1.1463052729254741e-14,
+      "original_objective": 77.94143253974931
+    }
+  },
+  "harbor_deadline_300_beta0_verified": {
+    "controls": {
+      "minimum_center_clearance": 0.0012980759726113078,
+      "max_velocity_reconstruction_error": 1.0547118733938987e-15,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.999996070726104
+    },
+    "replay": {
+      "rtol": 1e-10,
+      "max_step": 0.25,
+      "max_position_error": 3.8625103115919046e-11,
+      "max_fish_error": 1.634803403760543e-14,
+      "original_objective": 63.235941438547954
+    }
+  }
+}

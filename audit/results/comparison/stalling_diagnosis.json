@@ -1,0 +1,55 @@
+{
+  "description": "Read-only diagnosis of saved accepted controls; no new optimization or integration.",
+  "normalization_floor": 1e-10,
+  "boats": [
+    {
+      "boat": 1,
+      "initial_commanded_speed": 1.0,
+      "initial_attraction_norm": 1.444170022139461e-36,
+      "initial_actual_speed": 1.444170022139461e-26,
+      "net_displacement": 0.0,
+      "final_distance_to_nearest_ground": 7.5293400146874525,
+      "grounds_approached_within_5_units": []
+    },
+    {
+      "boat": 2,
+      "initial_commanded_speed": 1.0,
+      "initial_attraction_norm": 2.6665512344841207e-10,
+      "initial_actual_speed": 0.7272641411376053,
+      "net_displacement": 69.78195393137008,
+      "final_distance_to_nearest_ground": 6.389260331444634e-05,
+      "grounds_approached_within_5_units": [
+        5
+      ]
+    },
+    {
+      "boat": 3,
+      "initial_commanded_speed": 1.0,
+      "initial_attraction_norm": 3.3682050369862015e-14,
+      "initial_actual_speed": 0.0003367070938456721,
+      "net_displacement": 0.1421070309259675,
+      "final_distance_to_nearest_ground": 61.57007390688924,
+      "grounds_approached_within_5_units": []
+    },
+    {
+      "boat": 4,
+      "initial_commanded_speed": 1.0,
+      "initial_attraction_norm": 0.00020537597951103973,
+      "initial_actual_speed": 0.999999513088378,
+      "net_displacement": 33.16582804005928,
+      "final_distance_to_nearest_ground": 13.295453270795566,
+      "grounds_approached_within_5_units": []
+    },
+    {
+      "boat": 5,
+      "initial_commanded_speed": 1.0,
+      "initial_attraction_norm": 3.520385245786158e-05,
+      "initial_actual_speed": 0.9999971594098669,
+      "net_displacement": 50.11416487255724,
+      "final_distance_to_nearest_ground": 0.00041400612276634567,
+      "grounds_approached_within_5_units": [
+        3
+      ]
+    }
+  ]
+}

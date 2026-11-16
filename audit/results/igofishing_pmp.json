@@ -1,0 +1,41 @@
+{
+  "notebook": "igofishing.ipynb",
+  "J_history": [
+    13.074713081622395,
+    13.072650390164474
+  ],
+  "harvested": 6.998954632077949,
+  "stop_reason": "Numerical regularized-PMP tolerances met",
+  "method": "Pontryagin forward/backward adjoints and joint Hamiltonian control updates",
+  "speed_min": 0.0,
+  "speed_max": 0.9999952156840636,
+  "verification": {
+    "original_equation_feedback_replays": [
+      {
+        "rtol": 1e-08,
+        "max_step": 0.5,
+        "max_position_error": 2.4130883957695914e-08,
+        "max_fish_error": 5.113868516474183e-13,
+        "original_objective": 13.089725576599179
+      },
+      {
+        "rtol": 1e-10,
+        "max_step": 0.25,
+        "max_position_error": 4.405080744618317e-10,
+        "max_fish_error": 5.763618748932942e-16,
+        "original_objective": 13.089725576587874
+      }
+    ],
+    "original_control_checks": {
+      "minimum_center_clearance": 0.3012759265761786,
+      "max_velocity_reconstruction_error": 8.737127688007718e-11,
+      "attraction_min": 0.0,
+      "attraction_max": 10.0,
+      "speed_max": 0.9999952070695565
+    },
+    "integrated_hamiltonian_gap": 0.004816096959869811,
+    "max_hamiltonian_gap": 9.188648543076712e-05,
+    "projected_residual": 0.0009989016935736394
+  },
+  "note": "Saved regularized PMP feedback policy; no unregularized/global-optimum claim."
+}

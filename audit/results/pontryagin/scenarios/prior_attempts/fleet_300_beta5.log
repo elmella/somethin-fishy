@@ -1,0 +1,95 @@
+Adjoint polish {'penalty': 1.0, 'J': 40.96613031822169, 'original_J': 40.97702510341415, 'projected_residual': 1.9276989212984126, 'max_constraint_violation': 0.1925184851631485, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 40.7123575409333, 'original_J': 40.72306737062897, 'projected_residual': 0.4638733970985811, 'max_constraint_violation': 0.0641009579908669, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 40.67739956499401, 'original_J': 40.68835802098855, 'projected_residual': 0.018975309466815915, 'max_constraint_violation': 0.005399695330043031, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 40.676664517893194, 'original_J': 40.687638439303974, 'projected_residual': 0.0068017683015622055, 'max_constraint_violation': 0.0008770583159360967, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 40.67651959166455, 'original_J': 40.68747421681347, 'projected_residual': 0.007986098307178224, 'max_constraint_violation': 5.0931353680283564e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 40.67635269871695, 'original_J': 40.68732082353306, 'projected_residual': 0.0058978822905526584, 'max_constraint_violation': 4.257115900685449e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 40.676367631919355
+Edge adjoint sweep 100 40.67636199041424
+Edge adjoint sweep 200 40.6762730364775
+Edge adjoint sweep 300 40.675819601145804
+Forward-backward cycle {'cycle': 0, 'initial_J': 52.540968755476186, 'J': 40.67562468410375, 'original_J': 40.6865900218076, 'projected_residual': 0.0009352204896149792, 'integrated_hamiltonian_gap': 16.28405371251032, 'max_hamiltonian_gap': 0.29031818578102364}
+Joint Hamiltonian updates: 431 stopped headings; 6 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 37.0479851451204, 'original_J': 37.06128991103501, 'projected_residual': 3.097909073879359, 'max_constraint_violation': 0.17729112243091638, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 36.43063727768865, 'original_J': 36.444025234218515, 'projected_residual': 0.3356778013088304, 'max_constraint_violation': 0.03464431302308668, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 36.38754728357731, 'original_J': 36.40048043747935, 'projected_residual': 0.13047337905904222, 'max_constraint_violation': 0.0038844755459770397, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 36.37257209077377, 'original_J': 36.3855515678602, 'projected_residual': 0.04044114677258648, 'max_constraint_violation': 0.000940482314737423, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.364916399068896, 'original_J': 36.37771067342685, 'projected_residual': 0.02755708531509704, 'max_constraint_violation': 3.746930305048579e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.35597588035285, 'original_J': 36.36893611210729, 'projected_residual': 0.17822126242881708, 'max_constraint_violation': 1.382602559196755e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 36.355956914030116
+Edge adjoint sweep 100 36.35595468519885
+Edge adjoint sweep 200 36.35594347152417
+Edge adjoint sweep 300 36.355878439827194
+Edge adjoint sweep 400 36.353771338378465
+Edge adjoint sweep 500 36.33879200668207
+Forward-backward cycle {'cycle': 1, 'initial_J': 39.11147177779864, 'J': 36.32467905266227, 'original_J': 36.3374102635781, 'projected_residual': 0.0020526684938321944, 'integrated_hamiltonian_gap': 0.14284336957320798, 'max_hamiltonian_gap': 0.007075851443950389}
+Joint Hamiltonian updates: 242 stopped headings; 2 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 36.92198689173466, 'original_J': 36.93445606325116, 'projected_residual': 3.0895924132141097, 'max_constraint_violation': 0.17924372877030126, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 36.31098808413832, 'original_J': 36.32396894059341, 'projected_residual': 0.2995109910858256, 'max_constraint_violation': 0.03496490809402708, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 36.30351889197453, 'original_J': 36.31634193778798, 'projected_residual': 0.0957184170938099, 'max_constraint_violation': 0.0038880979147855044, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 36.30260003426718, 'original_J': 36.315323641246394, 'projected_residual': 0.06836758153149636, 'max_constraint_violation': 0.0009402092607171397, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.30239180438333, 'original_J': 36.31511462394569, 'projected_residual': 0.027567897983505896, 'max_constraint_violation': 3.7621934238174504e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.30223958509464, 'original_J': 36.314984225763865, 'projected_residual': 0.005338543623476966, 'max_constraint_violation': 7.319468686262098e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 36.302240954907575
+Edge adjoint sweep 100 36.302240875862566
+Edge adjoint sweep 200 36.30223944530395
+Edge adjoint sweep 300 36.30223651634755
+Forward-backward cycle {'cycle': 2, 'initial_J': 36.30995006203962, 'J': 36.302148697602775, 'original_J': 36.31492506514149, 'projected_residual': 0.0009471227240049236, 'integrated_hamiltonian_gap': 0.022351280293419876, 'max_hamiltonian_gap': 0.0010200713658675591}
+Joint Hamiltonian updates: 252 stopped headings; 1 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 36.89990640209141, 'original_J': 36.91231808638473, 'projected_residual': 3.09325457449831, 'max_constraint_violation': 0.18069623485448982, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 36.306071761876325, 'original_J': 36.319104846565594, 'projected_residual': 0.2890964547565664, 'max_constraint_violation': 0.035238801624859484, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 36.29977911358939, 'original_J': 36.312707141645575, 'projected_residual': 0.05573178344142349, 'max_constraint_violation': 0.003849160829313192, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 36.2991649817862, 'original_J': 36.3120328208474, 'projected_residual': 0.014034493796458491, 'max_constraint_violation': 0.0009393421408585567, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.299011511247016, 'original_J': 36.31189679613636, 'projected_residual': 0.006038879189011581, 'max_constraint_violation': 3.748179782192551e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.298923060898346, 'original_J': 36.311819776240924, 'projected_residual': 0.0039788539467717765, 'max_constraint_violation': 7.132065880099958e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 36.29896716570556
+Edge adjoint sweep 100 36.298967057794634
+Edge adjoint sweep 200 36.298966465830944
+Edge adjoint sweep 300 36.29896515374337
+Forward-backward cycle {'cycle': 3, 'initial_J': 36.30051671218526, 'J': 36.298923060898346, 'original_J': 36.311819776240924, 'projected_residual': 0.0039788539467717765, 'integrated_hamiltonian_gap': 0.013937629700240265, 'max_hamiltonian_gap': 0.0010350799932689028}
+Joint Hamiltonian updates: 232 stopped headings; 0 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 36.85880412265255, 'original_J': 36.871455573998304, 'projected_residual': 3.0763687776616964, 'max_constraint_violation': 0.18058191633941956, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 36.3049821990922, 'original_J': 36.31803209885197, 'projected_residual': 0.31099668551422344, 'max_constraint_violation': 0.03527371663723322, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 36.29832548021956, 'original_J': 36.31133753897688, 'projected_residual': 0.04980527860506179, 'max_constraint_violation': 0.0038681275197554044, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 36.2975416821235, 'original_J': 36.31053735328444, 'projected_residual': 0.011784826569437357, 'max_constraint_violation': 0.0009418667200034037, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.29743340846867, 'original_J': 36.31038576436728, 'projected_residual': 0.0031475838739161155, 'max_constraint_violation': 3.7274167919321144e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.29735969630462, 'original_J': 36.31033968810435, 'projected_residual': 0.009189037212745887, 'max_constraint_violation': 6.99959484684598e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 36.29859009892753
+Edge adjoint sweep 100 36.298590032202675
+Edge adjoint sweep 200 36.298589271282054
+Edge adjoint sweep 300 36.29858619000996
+Forward-backward cycle {'cycle': 4, 'initial_J': 36.298923060898346, 'J': 36.29735969630462, 'original_J': 36.31033968810435, 'projected_residual': 0.009189037212745887, 'integrated_hamiltonian_gap': 0.012457051222136075, 'max_hamiltonian_gap': 0.0005363676905879761}
+Joint Hamiltonian updates: 240 stopped headings; 0 accepted intervals
+Adjoint polish {'penalty': 1.0, 'J': 36.81910630189506, 'original_J': 36.83174183916894, 'projected_residual': 3.0990943184501516, 'max_constraint_violation': 0.1795003064537406, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10.0, 'J': 36.3040708330105, 'original_J': 36.31724954402689, 'projected_residual': 0.3012976698713432, 'max_constraint_violation': 0.03550162841048454, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 100.0, 'J': 36.297315974617284, 'original_J': 36.31035592037622, 'projected_residual': 0.04421559308352663, 'max_constraint_violation': 0.00387000493090639, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 1000.0, 'J': 36.29700023512821, 'original_J': 36.31006220655578, 'projected_residual': 0.015695561224777776, 'max_constraint_violation': 0.0009419673452146782, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.29694890132896, 'original_J': 36.3099613799229, 'projected_residual': 0.005170154781543701, 'max_constraint_violation': 3.7313597310628666e-05, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Adjoint polish {'penalty': 10000.0, 'J': 36.29691169243611, 'original_J': 36.309962174222875, 'projected_residual': 0.003361376261437954, 'max_constraint_violation': 7.060032432448793e-06, 'inner_status': 'STOP: TOTAL NO. of ITERATIONS REACHED LIMIT', 'iterations': 1000}
+Edge adjoint sweep 0 36.298138404168554
+Edge adjoint sweep 100 36.298138362627625
+Edge adjoint sweep 200 36.29813777720129
+Forward-backward cycle {'cycle': 5, 'initial_J': 36.29735969630462, 'J': 36.29691169243611, 'original_J': 36.309962174222875, 'projected_residual': 0.003361376261437954, 'integrated_hamiltonian_gap': 0.017370466649292565, 'max_hamiltonian_gap': 0.0005036268124873366}
+{'method': 'Pontryagin forward/backward adjoints and joint Hamiltonian control updates', 'residual_coordinates': 'Hull targets / 20 and speed fractions', 'initialization': 'Deterministic coverage assignment; no route-optimized solution used', 'execution': 'State-feedback attraction reconstruction; NOT a fixed raw-u table', 'source': '/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/results/pontryagin/fleet_300_beta5.npz', 'eta': 0.5, 'travel_smoothing': 0.001, 'steps': 150, 'J': 36.29691169243611, 'original_J': 36.309962174222875, 'harvested': 11.889874371053788, 'crowding': 17.89585179833611, 'travel': 7.401547481265526, 'terminal_fish': 11.012562894621244, 'distance_per_boat': [172.9098801496625, 94.84962361376148, 92.42242538147946, 46.46184467539039, 38.734593240738484, 88.29767521278866, 143.8666350154598, 62.61207083727171], 'initial_J': 52.540968755476186, 'history_scope': 'Saved accepted optimization cycles/iterates', 'projected_residual': 0.003361376261437954, 'gradient_tolerance': 0.001, 'integrated_hamiltonian_gap': 0.022421305730693678, 'max_hamiltonian_gap': 0.002963984893562006, 'hamiltonian_tolerance': 0.005, 'hamiltonian_time_samples': 450, 'converged': False, 'status': 'Residual tolerances not met', 'optimizer_termination': 'Iteration limit; residual tolerances not met', 'continuous_replay': {'max_position_error': 4.98044414598553e-08, 'max_fish_error': 5.972536701315256e-12, 'J': 36.29691169230503, 'original_J': 36.309962174269614, 'rtol': 1e-09}, 'original_equation_feedback_replays': [{'rtol': 1e-08, 'max_step': 0.5, 'max_position_error': 5.7309819112560945e-09, 'max_fish_error': 2.2112207898050684e-12, 'original_objective': 36.30996217400845}, {'rtol': 1e-10, 'max_step': 0.25, 'max_position_error': 4.077094217791455e-11, 'max_fish_error': 2.0271978540264968e-13, 'original_objective': 36.30996217420669}], 'original_control_checks': {'minimum_center_clearance': 2.2472865895099862e-07, 'max_velocity_reconstruction_error': 4.71289673953379e-13, 'attraction_min': 0.0, 'attraction_max': 10.0, 'speed_max': 0.9999952524999448}, 'travel_smoothing_uniform_cost_bound': 0.024, 'global_optimality_claim': False, 'original_unregularized_PMP_convergence_claim': False}
+Joint update 0 0.017370466649292565 231 0
+Edge adjoint sweep 0 36.298138404168554
+Edge adjoint sweep 100 36.29813836303943
+Edge adjoint sweep 200 36.29813789903991
+Edge adjoint sweep 300 36.29813696038563
+Edge adjoint sweep 400 36.298063760057296
+Edge adjoint sweep 500 36.29751570006417
+Edge adjoint sweep 600 36.29632799810502
+Edge adjoint sweep 700 36.2942691775896
+Edge adjoint sweep 800 36.291150178259336
+REFINED {'cycle': 0, 'J': 36.2863826211267, 'projected_residual': 0.0009978099435709936, 'integrated_hamiltonian_gap': 0.00872042727201677, 'max_hamiltonian_gap': 0.0010219232489281198}
+Joint update 1 0.00872042727201677 34 0
+Traceback (most recent call last):
+  File "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/scenario_experiments.py", line 85, in <module>
+    if any(row['returncode'] for row in results):raise RuntimeError('Some numerical runs failed; inspect saved logs.')
+  File "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/scenario_experiments.py", line 60, in run
+    for attempt in range(2):
+  File "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/edge_refine_pmp.py", line 29, in refine
+    edge=EdgeSweep(s,edge_initialization(s,u));u,fit=edge.optimize_edges(evaluations)
+  File "/Users/matthewmella/repos/matt-projects/somethin-fishy/audit/pmp_edge.py", line 22, in edge_initialization
+    if np.any(radius<=0):raise ValueError('No positive far-hull target.')
+ValueError: No positive far-hull target.
